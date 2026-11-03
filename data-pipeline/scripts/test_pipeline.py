@@ -20,6 +20,11 @@ def drug(name='spironolactone', role='1', indication='hypertension'):
 
 
 class CleaningTests(unittest.TestCase):
+    def test_reaction_case_variants_are_deduplicated_within_report(self):
+        rows = [report([drug()], [{'reactionmeddrapt': 'Hyperkalaemia'}, {'reactionmeddrapt': 'HYPERKALAEMIA'}])]
+        result = clean_faers(rows)
+        self.assertEqual(result[1]['hyperkalaemia'], 1)
+        self.assertEqual(len(result[1]), 1)
     def test_null_indication_stays_unspecified(self):
         result = clean_faers([report([drug(indication=None)])])
         self.assertEqual(result[4][None], 1)
@@ -117,7 +122,7 @@ class CleaningTests(unittest.TestCase):
         r = report([drug(), drug()], [{'reactionmeddrapt': 'Example reaction'}]*2)
         audit, reactions, _, summaries, usage, *_ = clean_faers([r])
         self.assertEqual(audit['retained'], 1)
-        self.assertEqual(reactions['Example reaction'], 1)
+        self.assertEqual(reactions['example reaction'], 1)
         self.assertEqual(usage['hypertension'], 1)
         self.assertEqual(sum(summaries.values()), 1)
 

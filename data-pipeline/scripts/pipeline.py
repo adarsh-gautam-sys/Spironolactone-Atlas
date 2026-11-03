@@ -50,6 +50,11 @@ def normalize(value):
     return re.sub(r'[^a-z0-9]+', ' ', str(value).casefold()).strip()
 
 
+def reaction_term(value):
+    """Normalize spelling case/whitespace only; do not infer MedDRA synonyms."""
+    return re.sub(r'\s+', ' ', str(value).strip().casefold()) if value else ''
+
+
 def matching(drug):
     names = [drug.get('medicinalproduct', '')]
     for key in ('generic_name', 'brand_name', 'substance_name'):
@@ -298,7 +303,7 @@ def clean_faers(rows):
         pairs = {(normalize(d.get('drugindication', '')) or None) for d in suspects}
         for indication in pairs:
             indications[indication] += 1
-        terms = {r.get('reactionmeddrapt') for r in patient.get('reaction', []) if r.get('reactionmeddrapt')}
+        terms = {reaction_term(r.get('reactionmeddrapt')) for r in patient.get('reaction', []) if reaction_term(r.get('reactionmeddrapt'))}
         for term in terms:
             reactions[term] += 1
             stratified[(term, seriousness, sex, age)] += 1

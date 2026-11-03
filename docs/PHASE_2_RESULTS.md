@@ -21,8 +21,8 @@ These counts describe this documented query and selection protocol, not exhausti
 
 | Dataset                    | Rows  | JSON bytes |
 | -------------------------- | ----- | ---------- |
-| adverse-reactions-filtered | 1,103 | 577,579    |
-| adverse-reactions          | 5,742 | 1,695,024  |
+| adverse-reactions-filtered | 1,163 | 592,340    |
+| adverse-reactions          | 4,293 | 1,349,558  |
 | hyperkalaemia-coreported   | 3,593 | 597,594    |
 | reaction-outcomes          | 7     | 316,684    |
 | report-summary             | 3,224 | 747,859    |
@@ -48,3 +48,7 @@ Every dataset has a JSON envelope with sources, queries, dates, units, overlap a
 The Indian product label and permitted MedDRA hierarchy remain unresolved. Evidence grades, detailed topic screening and product/population-specific reported-use classification remain for Phase 3. Usage rows are source-term pairs; synonyms can overlap within reports and cannot simply be summed into distinct-condition totals. Clinical conclusions and off-label prescribing prevalence are not established by this release.
 
 No new dependencies were needed. The local API key is stored in the ignored environment file, and raw response caches are excluded from Git.
+
+## Phase 3 data correction
+
+Reaction-term capitalization and whitespace were normalized within each report before aggregation. This merges case variants without double-counting co-occurrence. Historical synonyms remain distinct. The cohort and exclusions are unchanged; export hashes and reaction rankings were regenerated.
