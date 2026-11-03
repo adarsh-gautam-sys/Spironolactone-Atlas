@@ -18,3 +18,6 @@ data-pipeline/clean/exports/
 Thumbs.db
 .vscode/
 .idea/
+.impeccable/questions/
+.impeccable/references/
+.impeccable/config.local.json

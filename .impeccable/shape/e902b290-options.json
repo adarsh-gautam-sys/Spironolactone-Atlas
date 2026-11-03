@@ -1,0 +1,167 @@
+{
+  "title": "Shape Spironolactone Atlas",
+  "question": "Choose the direction that best supports a 60-second evidence story, then deeper exploration. These are planning mockups, not the built website.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Journal Club Evidence Table",
+      "kicker": "THE ROLL",
+      "lineage": "Clinical journal-club comparison tables, expanded into an editorial reading surface",
+      "thesis": "Every important number sits beside what it means and what it cannot establish.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "ink-dark reading field",
+        "aligned evidence columns",
+        "serif narrative and tabular annotations"
+      ],
+      "viewport": "An asymmetric title and one large, source-annotated evidence table introduce reports, reaction mentions and missing indication data; a chapter spine leads into the story.",
+      "risk": "The opening could feel too academic unless one clear takeaway leads the table.",
+      "raised": [
+        {
+          "from": "Data-sublime field",
+          "raise": "Data density becomes intentional, with exact quantities and readable source annotations rather than decorative numbers."
+        },
+        {
+          "from": "Cutting-bench rail",
+          "raise": "A persistent chapter marker preserves the reader's place and makes deeper material easy to revisit."
+        },
+        {
+          "from": "Bitmap specimen",
+          "raise": "A decisive headline-to-annotation scale contrast gives the first viewport one unmistakable focus."
+        },
+        {
+          "from": "Industrial label grammar",
+          "raise": "Every interactive state has an explicit text or shape cue, never colour alone."
+        },
+        {
+          "from": "Cloud quarry",
+          "raise": "Missing information occupies visible, measured space instead of being hidden in a footnote."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/e902b290-assigned.png"
+    },
+    {
+      "id": "model-pick",
+      "label": "Grand Rounds Projection",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "The annotated projection in a clinical teaching session",
+      "thesis": "One large explanatory figure carries the first lesson before the reader opens the detail.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "deep projection field",
+        "oversized figure captions",
+        "measured chart annotations"
+      ],
+      "viewport": "The title sits beside a commanding, correctly labelled reaction-term figure; a short annotation explains the reporting denominator and a clear link begins the story.",
+      "risk": "The familiar editorial-science composition is effective but less distinctive than the evidence-table direction.",
+      "comp": ".impeccable/mocks/decision/e902b290-pick.png"
+    },
+    {
+      "id": "challenger-bauhaus",
+      "label": "Evidence in Proportion",
+      "verdict": "competitive",
+      "lineage": "Bauhaus foundation-course point, line and plane, adapted to the PRD's ink/coral/teal roles",
+      "thesis": "Measured geometric space makes the difference between recorded information and uncertainty immediately legible.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "flat measured planes",
+        "visible alignment",
+        "large tabular numerals"
+      ],
+      "viewport": "A dominant 52.2% figure and a precisely labelled two-part area introduce missing indication information, with product title, reading action and source beside it.",
+      "case": "Competitive on product clarity through quantitative space; the journal-club direction has stronger identification with pharmacy peers and evaluators.",
+      "risk": "Can feel abstract or poster-like if the reading sequence and source labels become secondary to the geometry.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-canon-bauhaus-foundation-workshop.webp",
+      "comp": ".impeccable/mocks/decision/e902b290-bauhaus.png"
+    },
+    {
+      "id": "challenger-ikeda",
+      "label": "Data-sublime Field",
+      "verdict": "declined",
+      "lineage": "Dense barcode and numerical data-art fields",
+      "thesis": "Report records resolve from a dense field into selected evidence.",
+      "palette": ["#000000", "#FFFFFF"],
+      "materials": ["barcode lattice", "dense monospace columns"],
+      "viewport": "A data field resolves a selected report count into a readable observation.",
+      "case": "Loses audience identification and first-minute comprehension against the evidence table; pure monochrome and strobing also conflict with the stated brief and motion constraints.",
+      "kept": "Its commitment to quantitative density and exact annotations raises the evidence table without copying the barcode costume.",
+      "risk": "Could imply a live diagnostic instrument or overwhelm the explanatory text.",
+      "hero": "https://impeccable.style/worlds/cards/ikeda-datamatics-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/ikeda-datamatics.webp"
+    },
+    {
+      "id": "challenger-cutting",
+      "label": "Cutting-bench Select Rail",
+      "verdict": "declined",
+      "lineage": "Film-editing rails and visible selected/deferred frames",
+      "thesis": "The evidence story is a sequence of inspectable frames.",
+      "palette": ["#000000", "#F27D30", "#FFFFFF"],
+      "materials": ["perforated frame rail", "selection flags"],
+      "viewport": "A horizontal sequence carries the reader between evidence frames and source notes.",
+      "case": "Loses both axes: film-editing semantics are foreign to the audience and obscure a plain evidence-reading task.",
+      "kept": "A durable reading-position marker and reachable chapter history, translated into the table's own wayfinding.",
+      "risk": "Horizontal scrubbing could turn reading into an unfamiliar operation.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-emigre",
+      "label": "Bitmap Type Specimen",
+      "verdict": "declined",
+      "lineage": "Emigre bitmap type specimens",
+      "thesis": "Scale changes reveal the relationship between headline and evidence detail.",
+      "palette": ["#F5F3EA", "#111111", "#F48F7A"],
+      "materials": ["pixel display type", "specimen columns"],
+      "viewport": "A repeated headline changes scale as the reader reaches the supporting evidence.",
+      "case": "Loses both axes: the type experiment takes attention from the medical evidence and weakens the requested calm, precise reading.",
+      "kept": "A strong, deliberate difference between narrative display and compact evidence annotations.",
+      "risk": "Novel lettering can make clinical terminology harder to read.",
+      "hero": "https://impeccable.style/worlds/cards/emigre-bitmap-specimen-hero.webp"
+    },
+    {
+      "id": "challenger-industrial",
+      "label": "Industrial Label Grammar",
+      "verdict": "declined",
+      "lineage": "Quoted industrial labels and explicit physical state marks",
+      "thesis": "Every region and state names exactly what it contains.",
+      "palette": ["#FFFFFF", "#111111", "#F07826"],
+      "materials": ["stencilled labels", "hazard diagonals"],
+      "viewport": "Literal label plates divide the story into named operational zones.",
+      "case": "Loses both axes: hazard-led branding mis-signals risk and the fashion reference distracts from source interpretation.",
+      "kept": "Explicit text and shape cues for selected, unavailable and expanded states.",
+      "risk": "Warnings could become a decorative brand device.",
+      "hero": "https://impeccable.style/worlds/cards/textiles-weave-drape-fashion-industrial-quote-grammar-hero.webp"
+    },
+    {
+      "id": "challenger-cloud",
+      "label": "Cloud Quarry",
+      "verdict": "declined",
+      "lineage": "Surreal cut blocks of weather and visible voids",
+      "thesis": "Known observations have mass while absent information remains a visible gap.",
+      "palette": ["#EDF2F5", "#94BAD6", "#5C6874"],
+      "materials": ["volumetric cloud blocks", "cut voids"],
+      "viewport": "Sections reveal measured gaps between blocks of evidence.",
+      "case": "Loses both axes: the metaphor makes missing clinical information more abstract, with little pharmacy identification and substantial performance cost.",
+      "kept": "Missingness gets quantitatively meaningful space in the reading surface, without cloud imagery.",
+      "risk": "Dissolving imagery could imply that uncertainty disappears.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "Clinical Editorial Standard",
+    "thesis": "A conventional, polished editorial page with familiar section navigation and headline statistics.",
+    "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+    "materials": [
+      "familiar editorial grid",
+      "headline statistic panels",
+      "stacked chart sections"
+    ],
+    "viewport": "A centered title and introductory paragraph sit above a clear statistical row, with the first chart visible below.",
+    "risk": "Familiar and easy to scan, with less distinctive interaction and composition.",
+    "comp": ".impeccable/mocks/decision/e902b290-canon.png"
+  },
+  "steer": true
+}

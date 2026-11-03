@@ -8,7 +8,7 @@ The seven-day PRD schedule is a sequence of deliverables, not a fixed deadline. 
 | 1 — Research foundation | Source review, bounded API tests, indication/evidence shortlist, draft data contracts | Complete with documented source gaps, 3 November 2026                        |
 | 2 — Data pipeline       | Full extraction, cleaning, mappings, validation, typed JSON/CSV exports               | Complete with documented appraisal gaps, 3 November 2026                     |
 | 3 — Analysis            | Descriptive results, uncertainty and limitations, evidence grading, insight shortlist | Complete bounded appraisal; clinical/source gaps documented, 3 November 2026 |
-| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | Not started                                                                  |
+| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | In progress: Impeccable shape; audience and comp-first confirmed             |
 | 5 — Frontend            | Sections, charts, tables and selected effects                                         | Not started                                                                  |
 | 6 — Quality and launch  | Accessibility, performance, deployment and LinkedIn assets                            | Not started                                                                  |
 
