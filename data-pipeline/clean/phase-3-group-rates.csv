@@ -1,0 +1,46 @@
+term,dimension,group,reportCount,denominator,percentWithinReportedGroup
+hyperkalaemia,sex,female,1387,12129,11.435
+hyperkalaemia,sex,male,1781,10125,17.59
+hyperkalaemia,sex,unknown,284,2551,11.133
+acute kidney injury,sex,female,1288,12129,10.619
+acute kidney injury,sex,male,1399,10125,13.817
+acute kidney injury,sex,unknown,446,2551,17.483
+hypotension,sex,female,795,12129,6.555
+hypotension,sex,male,869,10125,8.583
+hypotension,sex,unknown,168,2551,6.586
+dyspnoea,sex,female,871,12129,7.181
+dyspnoea,sex,male,584,10125,5.768
+dyspnoea,sex,unknown,111,2551,4.351
+hyponatraemia,sex,female,877,12129,7.231
+hyponatraemia,sex,male,496,10125,4.899
+hyponatraemia,sex,unknown,114,2551,4.469
+hyperkalaemia,ageBand,75+,1510,7537,20.034
+hyperkalaemia,ageBand,,381,5316,7.167
+hyperkalaemia,ageBand,45–64,610,5132,11.886
+hyperkalaemia,ageBand,65–74,883,4611,19.15
+hyperkalaemia,ageBand,18–44,42,1751,2.399
+hyperkalaemia,ageBand,<18,26,458,5.677
+acute kidney injury,ageBand,75+,1346,7537,17.859
+acute kidney injury,ageBand,,413,5316,7.769
+acute kidney injury,ageBand,45–64,535,5132,10.425
+acute kidney injury,ageBand,65–74,734,4611,15.918
+acute kidney injury,ageBand,18–44,88,1751,5.026
+acute kidney injury,ageBand,<18,17,458,3.712
+hypotension,ageBand,75+,705,7537,9.354
+hypotension,ageBand,,325,5316,6.114
+hypotension,ageBand,45–64,384,5132,7.482
+hypotension,ageBand,65–74,353,4611,7.656
+hypotension,ageBand,18–44,53,1751,3.027
+hypotension,ageBand,<18,12,458,2.62
+dyspnoea,ageBand,75+,487,7537,6.461
+dyspnoea,ageBand,,285,5316,5.361
+dyspnoea,ageBand,45–64,457,5132,8.905
+dyspnoea,ageBand,65–74,273,4611,5.921
+dyspnoea,ageBand,18–44,58,1751,3.312
+dyspnoea,ageBand,<18,6,458,1.31
+hyponatraemia,ageBand,75+,804,7537,10.667
+hyponatraemia,ageBand,,162,5316,3.047
+hyponatraemia,ageBand,45–64,228,5132,4.443
+hyponatraemia,ageBand,65–74,232,4611,5.031
+hyponatraemia,ageBand,18–44,39,1751,2.227
+hyponatraemia,ageBand,<18,22,458,4.803

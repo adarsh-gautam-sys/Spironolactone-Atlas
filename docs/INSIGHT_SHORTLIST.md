@@ -1,0 +1,11 @@
+# Phase 3 — five draft takeaways
+
+These are evidence-linked candidates for the design phase, not final promotional copy. Counts refer to the selected 2004–2025 reporting cohort and sources retrieved 3 November 2026. All reaction percentages use 24,805 retained reports as denominator; multiple terms may occur in one report.
+
+1. **Hyperkalaemia is the most frequent normalized reaction term.** It appears in 3,452 retained reports (13.9%), followed by acute kidney injury in 3,133 (12.6%). Use “reported” beside the numbers; do not call these incidence rates or drug-caused events. [Reaction data](../public/data/adverse-reactions.json).
+2. **The indication field has a substantial information gap.** No informative indication is available in 12,955 reports (52.2%). This supports a transparent completeness view rather than a prescribing-prevalence headline. Exact screening lists and report-level overlap handling are in the [analysis JSON](../data-pipeline/clean/phase-3-analysis.json).
+3. **Serious reports dominate this selected reporting cohort.** There are 21,979 serious reports (88.6%). Selection and reporting requirements strongly shape this distribution; it says nothing about the chance that a treated patient will have a serious event. [Report summary](../public/data/report-summary.json).
+4. **Publication search activity grew unevenly across topics.** The proteinuria/CKD query returned 182 annual PMID hits in 2021–2025 versus 45 in 2004–2008; acne returned 112 versus 23. These are exact-query discovery counts, with overlap and terminology limitations, rather than evidence grades or prescribing volume. [Research data](../public/data/research-publications.json).
+5. **The endpoint matters as much as the study count.** PATHWAY-2 supports its specific short-term blood-pressure endpoint; TOPCAT did not significantly reduce its primary composite outcome, and BARACK-D did not demonstrate its cardiovascular primary-outcome benefit in the studied CKD population. Each conclusion needs its own population and limitations. [Targeted evidence appraisal](EVIDENCE_APPRAISAL.md).
+
+Avoid these headlines: “spironolactone causes X% hyperkalaemia,” “X% of prescribing is off-label,” “men are at X times the drug risk,” “report counts prove safety improved,” and “more publications prove a treatment works.” None follows from this dataset.

@@ -59,3 +59,11 @@ The [phase-2 audit manifest](clean/phase-2-audit.json) is the per-request log: e
 All 22 annual event partitions reconciled to independent first-receipt-date count queries. Daily mismatches were repaired by replacing disputed dates with narrow queries, with original responses retained. Pagination hit totals were observed to vary and were not used as the final denominator. An offline replay reproduced the final cohort before publication.
 
 Publication includes aggregate event data, topic/year publication counts, registered studies, product-label reference indexes, and explicitly sourced manual indication/interaction summaries. Full label text remains in local raw caches. Medical evidence grading and India/SOC gaps remain pending; unknown reported-use classifications are preserved.
+
+## Phase 3 descriptive analysis — 3 November 2026
+
+Reaction terms were casefolded and whitespace-normalized within each report before aggregation. This correction, including regenerated exports and their hashes, was pushed as 05f688a. No clinical synonyms or SOC assignments were inferred.
+
+`analyse.py` replays the cached selected cohort with network disabled and checks it against the 24,805-report export denominator. It verifies source hashes, computes demographic/seriousness marginals and within-group reporting shares, deduplicates indication-topic matches per report, compares the pre-specified five-year publication-query windows, and records unknowns without imputation. Exact topic-screen vocabularies are stored in `clean/phase-3-analysis.json`. No confidence intervals, causal tests, PRR or ROR were estimated.
+
+Outputs: `clean/phase-3-analysis.json`, `clean/phase-3-group-rates.csv`, `clean/evidence-appraisal.json`, and `docs/figures/phase-3-overview.png` / `.svg`. Interpretation, external primary-source citations and review access limits are in `docs/PHASE_3_ANALYSIS.md` and `docs/EVIDENCE_APPRAISAL.md`. The appraisal is targeted and editorial, not a full systematic review or formal GRADE assessment. Review scope and access limits accompany each grade.

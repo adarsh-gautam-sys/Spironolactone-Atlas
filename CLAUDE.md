@@ -1,6 +1,6 @@
 # Project conventions
 
-- Follow `docs/PHASES.md`. Phase 2 pipeline work is authorized; design and frontend implementation require a later instruction.
+- Follow `docs/PHASES.md`. Phase 3 analysis work is authorized; design and frontend implementation require a later instruction.
 - Use npm, Vite, React and TypeScript strict mode. Import project files through `@/` where useful.
 - Use Tailwind CSS v4 through its Vite plugin. Keep design-token placeholders in `src/index.css`; do not choose values during setup.
 - Import Motion from `motion/react`, never `framer-motion`.

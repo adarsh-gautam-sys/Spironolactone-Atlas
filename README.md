@@ -78,4 +78,8 @@ components.json
 
 The original supplied PRD is preserved at the repository root and copied unchanged to `docs/PRD.md`. It lists fields but no formal JSON schemas; `src/data/types.ts` is a provisional contract refined during source review. The Phase 1 review identifies corrections to seed assumptions without altering the original PRD.
 
-See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). Phase 2 exports and their audit are complete; see [the results](docs/PHASE_2_RESULTS.md). The next phase appraises the data and evidence. Design and frontend work remain separate later phases.
+See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). Phase 2 exports and their audit are complete; see [the results](docs/PHASE_2_RESULTS.md). Phase 3 analysis and bounded evidence appraisal are complete; see [the analysis](docs/PHASE_3_ANALYSIS.md). The next phase is design review. Design and frontend work remain separate later phases.
+
+## Analysis reproduction
+
+After restoring the documented raw caches and Python environment, run `data-pipeline/.venv/Scripts/python.exe data-pipeline/scripts/analyse.py`. It performs network-disabled record replay, verifies input export hashes and denominators, writes analysis JSON/CSV and renders analytical PNG/SVG figures. Matplotlib dependencies are pinned in `data-pipeline/requirements.txt`. The repository includes derived results and figures; raw caches remain local. See [content decisions](docs/CONTENT_DECISIONS.md) before using counts in website copy.

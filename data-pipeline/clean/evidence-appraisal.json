@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "1.0",
+  "reviewedAt": "2026-11-03",
+  "reviewType": "Targeted appraisal of named primary studies and official guidelines; not an exhaustive systematic review or formal GRADE assessment",
+  "gradeDefinitions": {
+    "A": "Strong support for a narrowly specified endpoint in the appraised evidence; not a blanket clinical recommendation",
+    "B": "Moderate or mixed evidence with material limits on certainty or applicability",
+    "C": "Emerging or limited evidence, including small, observational, indirect or access-limited studies"
+  },
+  "limitations": [
+    "Grades summarize this bounded source set; they are project editorial judgements, not validated clinical recommendations. Preserve review scope and limitations alongside each badge.",
+    "Evidence direction, evidence quality and regulatory approval are separate fields.",
+    "No dosing instructions are derived. Current guidance and additional studies can change an appraisal.",
+    "Publication-count queries through 2025 and current evidence appraisal through the review date serve different purposes."
+  ],
+  "sources": [
+    {
+      "id": "SAFA",
+      "url": "https://www.bmj.com/content/381/bmj-2022-074349",
+      "scope": "Full-text methods, endpoints, missing-data handling and limitations"
+    },
+    {
+      "id": "AAD2024",
+      "url": "https://www.aad.org/news/updated-guidelines-acne-management",
+      "scope": "Official guideline summary; hormonal therapy recommendations"
+    },
+    {
+      "id": "PCOS2023",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10505534/",
+      "scope": "Recommendations 4.6 and evidence-certainty context"
+    },
+    {
+      "id": "HIRSUTISM2018",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/hirsutism",
+      "scope": "Official recommendation summary"
+    },
+    {
+      "id": "FPHL2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12448166/",
+      "scope": "Full-text randomization, outcomes, attrition and limitations"
+    },
+    {
+      "id": "TOPCAT",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24716680/",
+      "scope": "Primary trial abstract; full-text risk-of-bias appraisal not completed"
+    },
+    {
+      "id": "PATHWAY2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4655321/",
+      "scope": "Full-text randomization, crossover outcomes, missing-data assumptions and applicability"
+    },
+    {
+      "id": "GENDER2025",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12086416/",
+      "scope": "Full-text active-comparator randomization, blinding, primary outcome and measurement limits"
+    },
+    {
+      "id": "ENDO2017",
+      "url": "https://www.endocrine.org/clinical-practice-guidelines/gender-dysphoria-gender-incongruence",
+      "scope": "Official guideline summary; publisher full text was access-limited"
+    },
+    {
+      "id": "CSC2015",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4697359/",
+      "scope": "Full-text crossover design, anatomical and visual outcomes, carryover limitations"
+    },
+    {
+      "id": "HS2024",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11216665/",
+      "scope": "Full-text retrospective design, response definition and limitations"
+    },
+    {
+      "id": "PMS1995",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8533564/",
+      "scope": "Abstract only; full methods inaccessible in this review"
+    },
+    {
+      "id": "PROTEINURIA2006",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17035949/",
+      "scope": "Primary abstract; open-label design and surrogate endpoint"
+    },
+    {
+      "id": "BARACKD",
+      "url": "https://www.nature.com/articles/s41591-024-03263-5",
+      "scope": "Full-text design, primary endpoint, treatment discontinuation and limitations"
+    }
+  ],
+  "data": [
+    {
+      "topic": "acne",
+      "grade": "B",
+      "direction": "benefit",
+      "question": "Patient-reported acne improvement in adult women, alongside permitted topical treatment",
+      "sourceIds": ["SAFA", "AAD2024"],
+      "design": "Pragmatic blinded placebo-controlled RCT plus official guideline summary",
+      "biasAndPrecision": "Independent randomization and masking reported; modified intention-to-treat analysis with missing-data sensitivity analysis. Primary improvement was modest and its clinically important threshold uncertain.",
+      "applicability": "Adult women; later follow-up showed larger differences. Do not generalize to every age, sex or acne presentation.",
+      "interpretation": "Supported option in the studied population, with conditional guideline context; project grade B reflects remaining certainty and applicability limits."
+    },
+    {
+      "topic": "hirsutism-pcos",
+      "grade": "C",
+      "direction": "benefit-with-limited-certainty",
+      "question": "Hirsutism management in PCOS, rather than treatment of all PCOS manifestations",
+      "sourceIds": ["PCOS2023", "HIRSUTISM2018"],
+      "design": "Official evidence-based guideline recommendations",
+      "biasAndPrecision": "The relevant PCOS antiandrogen recommendation has very-low-certainty evidence; recommendation strength is not equivalent to strong trial evidence.",
+      "applicability": "Hirsutism-specific context, with pregnancy-prevention restrictions and previous-treatment qualifications retained in the source.",
+      "interpretation": "A guideline-supported conditional role with limited underlying evidence; no blanket PCOS efficacy or approval claim."
+    },
+    {
+      "topic": "hair-loss",
+      "grade": "C",
+      "direction": "mixed",
+      "question": "Additional benefit for female pattern hair loss when added to topical minoxidil",
+      "sourceIds": ["FPHL2025"],
+      "design": "Small blinded placebo-controlled pilot RCT",
+      "biasAndPrecision": "Randomization and allocation concealment reported; 48 randomized with attrition. Primary hair-count comparison did not meet the conventional significance threshold, while photographic secondary outcomes favored treatment.",
+      "applicability": "Premenopausal women and combination treatment; not evidence for spironolactone monotherapy or all alopecia.",
+      "interpretation": "Promising but imprecise, endpoint-dependent evidence; the PRD's observational-only seed is outdated."
+    },
+    {
+      "topic": "hfpef",
+      "grade": "B",
+      "direction": "mixed-primary-no-clear-benefit",
+      "question": "TOPCAT primary composite outcome in heart failure with preserved ejection fraction",
+      "sourceIds": ["TOPCAT"],
+      "design": "Large blinded randomized placebo-controlled trial; abstract-level appraisal here",
+      "biasAndPrecision": "The primary confidence interval crossed the null. Secondary hospitalization findings must not replace the primary outcome; full-text bias, regional and subgroup appraisal remains incomplete.",
+      "applicability": "Specific trial EF/population definition; cannot borrow the reduced-EF label or generalize subgroup findings to all HFpEF.",
+      "interpretation": "No significant reduction in the overall primary composite; retain secondary signals as qualified context rather than a positive headline."
+    },
+    {
+      "topic": "resistant-hypertension",
+      "grade": "A",
+      "direction": "benefit-for-blood-pressure",
+      "question": "Short-term home blood-pressure reduction as add-on therapy in resistant hypertension",
+      "sourceIds": ["PATHWAY2"],
+      "design": "Blinded randomized crossover comparison against placebo and two active drugs",
+      "biasAndPrecision": "Randomization/masking reported and hierarchy of blood-pressure comparisons specified. Participants without follow-up were excluded and missing-at-random assumptions apply.",
+      "applicability": "Short exposure, selected kidney-function eligibility and predominantly white participants limit extrapolation. Cardiovascular outcome benefit was not the measured endpoint.",
+      "interpretation": "Strong evidence for the specified BP endpoint, not long-term outcome superiority. This use is not automatically off-label under the US add-on hypertension indication."
+    },
+    {
+      "topic": "gender-affirming",
+      "grade": "B",
+      "direction": "no-clear-comparative-breast-growth-difference",
+      "question": "Breast development with spironolactone versus cyproterone alongside estradiol",
+      "sourceIds": ["GENDER2025", "ENDO2017"],
+      "design": "Small blinded active-comparator randomized trial plus official guideline summary",
+      "biasAndPrecision": "Independent randomized allocation and masking reported; short follow-up, limited sample and measurement limitations reduce certainty. A nonsignificant difference is not proof of equivalence.",
+      "applicability": "Comparative treatment with concomitant estradiol; cannot establish the independent absolute contribution of spironolactone to all feminising outcomes.",
+      "interpretation": "Direct comparative evidence now exists, but endpoints and regimen context must remain explicit; project grade B is scoped to that comparison."
+    },
+    {
+      "topic": "central-serous",
+      "grade": "C",
+      "direction": "mixed-surrogate-benefit",
+      "question": "Anatomical fluid reduction versus visual benefit in persistent central serous chorioretinopathy",
+      "sourceIds": ["CSC2015"],
+      "design": "Small blinded randomized crossover study",
+      "biasAndPrecision": "Very small sample, short treatment periods and carryover concerns. Anatomical fluid measures improved while visual-acuity differences were not significant.",
+      "applicability": "Persistent disease in the selected study eyes; no established broad visual benefit from this source set.",
+      "interpretation": "Emerging anatomical signal, not sufficient evidence for an unqualified clinical-benefit claim."
+    },
+    {
+      "topic": "hidradenitis",
+      "grade": "C",
+      "direction": "observational-signal",
+      "question": "Treatment response in women with hidradenitis suppurativa",
+      "sourceIds": ["HS2024"],
+      "design": "Single-center retrospective cohort",
+      "biasAndPrecision": "No randomized untreated comparator; confounding by severity, co-treatment, selection and response assessment are material. Association is not a causal treatment effect.",
+      "applicability": "Selected clinical cohort; severe disease and response definitions affect findings.",
+      "interpretation": "Limited observational evidence; do not use response percentages as generalized efficacy estimates."
+    },
+    {
+      "topic": "pms-pmdd",
+      "grade": "C",
+      "direction": "limited-pms-benefit-signal",
+      "question": "PMS symptoms in the historical trial population, not a PMDD efficacy claim",
+      "sourceIds": ["PMS1995"],
+      "design": "Small placebo-controlled crossover study; abstract-only appraisal",
+      "biasAndPrecision": "Small sample and reported carryover; full allocation, attrition and analysis methods were not available for appraisal.",
+      "applicability": "Historical PMS diagnosis and symptom measures cannot be assumed to establish efficacy for modern PMDD criteria.",
+      "interpretation": "Limited PMS signal; keep PMDD ungraded and avoid extending this badge to a PMDD treatment claim."
+    },
+    {
+      "topic": "proteinuria-ckd",
+      "grade": "C",
+      "direction": "surrogate-signal-with-negative-cardiovascular-context",
+      "question": "Proteinuria reduction in CKD; separate from cardiovascular protection",
+      "sourceIds": ["PROTEINURIA2006", "BARACKD"],
+      "design": "Open-label randomized proteinuria study (abstract) plus a larger cardiovascular-outcome trial (full text)",
+      "biasAndPrecision": "Proteinuria is a surrogate and the earlier study was open-label. BARACK-D did not demonstrate cardiovascular benefit in its population and had substantial treatment discontinuation; it recruited below its original target.",
+      "applicability": "Different populations and endpoints cannot be pooled into one CKD-benefit conclusion; evidence for other mineralocorticoid antagonists is not interchangeable.",
+      "interpretation": "Limited evidence for the proteinuria question; preserve the separate negative cardiovascular result as context. No blanket CKD benefit or prescribing recommendation."
+    }
+  ]
+}
