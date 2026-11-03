@@ -1,0 +1,72 @@
+{
+  "protocolVersion": "phase-1-v1",
+  "purpose": "Connectivity and response-schema checks only; not analytical results",
+  "checks": [
+    {
+      "id": "faers-records",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND receivedate:[20040101 TO 20251231]",
+        "limit": 5
+      },
+      "responseKind": "openfda-events"
+    },
+    {
+      "id": "faers-suspect-candidate",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND patient.drug.drugcharacterization:1 AND receivedate:[20040101 TO 20251231]",
+        "limit": 5
+      },
+      "responseKind": "openfda-events"
+    },
+    {
+      "id": "faers-reaction-count",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND receivedate:[20040101 TO 20251231]",
+        "count": "patient.reaction.reactionmeddrapt.exact",
+        "limit": 5
+      },
+      "responseKind": "openfda-count"
+    },
+    {
+      "id": "fda-label-aldactone",
+      "source": "openFDA drug labels",
+      "endpoint": "https://api.fda.gov/drug/label.json",
+      "params": {
+        "search": "openfda.brand_name:aldactone",
+        "limit": 1
+      },
+      "responseKind": "openfda-labels"
+    },
+    {
+      "id": "pubmed-search",
+      "source": "NCBI PubMed ESearch",
+      "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "params": {
+        "db": "pubmed",
+        "term": "(spironolactone[MeSH Terms] OR spironolactone[Title/Abstract]) AND (\"1900/01/01\"[Date - Publication] : \"2025/12/31\"[Date - Publication])",
+        "retmode": "json",
+        "retmax": 3,
+        "tool": "spironolactone-atlas"
+      },
+      "responseKind": "pubmed-search"
+    },
+    {
+      "id": "clinicaltrials-search",
+      "source": "ClinicalTrials.gov API v2",
+      "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+      "params": {
+        "query.intr": "spironolactone",
+        "pageSize": 3,
+        "countTotal": "true",
+        "format": "json"
+      },
+      "responseKind": "clinicaltrials"
+    }
+  ]
+}

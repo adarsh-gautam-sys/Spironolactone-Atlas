@@ -1,0 +1,24 @@
+{
+  "protocolVersion": "phase-1-v1",
+  "purpose": "Connectivity and response-schema checks only; not analytical results",
+  "checks": [
+    {
+      "id": "fda-label-aldactone",
+      "source": "openFDA drug labels",
+      "endpoint": "https://api.fda.gov/drug/label.json",
+      "params": {
+        "search": "openfda.brand_name:aldactone",
+        "limit": 1
+      },
+      "responseKind": "openfda-records",
+      "retrievedAt": "2026-11-03T13:49:55.331939+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134955331414Z/fda-label-aldactone.json",
+      "sha256": "71aa64f7491fdd578227fa7b17052904ed46472347c38bfd8d130eb255406c71",
+      "returnedRecords": 1,
+      "availableRecords": 1,
+      "apiLastUpdated": "2026-10-30"
+    }
+  ]
+}

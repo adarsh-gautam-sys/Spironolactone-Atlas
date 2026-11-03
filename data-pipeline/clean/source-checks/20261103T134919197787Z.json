@@ -1,0 +1,117 @@
+{
+  "protocolVersion": "phase-1-v1",
+  "purpose": "Connectivity and response-schema checks only; not analytical results",
+  "checks": [
+    {
+      "id": "faers-records",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND receivedate:[20040101 TO 20251231]",
+        "limit": 5
+      },
+      "responseKind": "openfda-records",
+      "retrievedAt": "2026-11-03T13:49:19.198540+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134919197787Z/faers-records.json",
+      "sha256": "2d5f1302aa88cda80cae7847f4bd607147a039de7356ee2182a921df6d1da791",
+      "returnedRecords": 5,
+      "availableRecords": 135033,
+      "apiLastUpdated": "2026-10-28"
+    },
+    {
+      "id": "faers-suspect-candidate",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND patient.drug.drugcharacterization:1 AND receivedate:[20040101 TO 20251231]",
+        "limit": 5
+      },
+      "responseKind": "openfda-records",
+      "retrievedAt": "2026-11-03T13:49:21.673267+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134919197787Z/faers-suspect-candidate.json",
+      "sha256": "9b15ad767ba4f1821d94eb4e4c161906891951c13515f995d22edc6c90d9193a",
+      "returnedRecords": 5,
+      "availableRecords": 134262,
+      "apiLastUpdated": "2026-10-28"
+    },
+    {
+      "id": "faers-reaction-count",
+      "source": "openFDA drug events",
+      "endpoint": "https://api.fda.gov/drug/event.json",
+      "params": {
+        "search": "patient.drug.openfda.generic_name:spironolactone AND receivedate:[20040101 TO 20251231]",
+        "count": "patient.reaction.reactionmeddrapt.exact",
+        "limit": 5
+      },
+      "responseKind": "openfda-count",
+      "retrievedAt": "2026-11-03T13:49:22.601339+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134919197787Z/faers-reaction-count.json",
+      "sha256": "b10a2f692603ef7403fd9bbb2f0973b6b8fbc4569c1bdef76c1e5657d718f5c2",
+      "returnedRecords": 5,
+      "availableRecords": null,
+      "apiLastUpdated": "2026-10-28"
+    },
+    {
+      "id": "fda-label-aldactone",
+      "source": "openFDA drug labels",
+      "endpoint": "https://api.fda.gov/drug/label.json",
+      "params": {
+        "search": "openfda.brand_name.exact:ALDACTONE",
+        "limit": 1
+      },
+      "responseKind": "openfda-records",
+      "retrievedAt": "2026-11-03T13:49:23.590833+00:00",
+      "status": "failed",
+      "httpStatus": 404,
+      "error": "HTTP 404; no analytical count inferred"
+    },
+    {
+      "id": "pubmed-search",
+      "source": "NCBI PubMed ESearch",
+      "endpoint": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi",
+      "params": {
+        "db": "pubmed",
+        "term": "(spironolactone[MeSH Terms] OR spironolactone[Title/Abstract]) AND (\"1900/01/01\"[Date - Publication] : \"2025/12/31\"[Date - Publication])",
+        "retmode": "json",
+        "retmax": 3,
+        "tool": "spironolactone-atlas"
+      },
+      "responseKind": "pubmed-search",
+      "retrievedAt": "2026-11-03T13:49:24.494054+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134919197787Z/pubmed-search.json",
+      "sha256": "c9d8f40bcfe69744280cc67e86fd37725f522da1d063685a2f3a2ffdb8f034ac",
+      "returnedRecords": 3,
+      "availableRecords": 10603,
+      "queryTranslation": "(\"spironolactone\"[MeSH Terms] OR \"spironolactone\"[Title/Abstract]) AND 1900/01/01:2025/12/31[Date - Publication]",
+      "warnings": {}
+    },
+    {
+      "id": "clinicaltrials-search",
+      "source": "ClinicalTrials.gov API v2",
+      "endpoint": "https://clinicaltrials.gov/api/v2/studies",
+      "params": {
+        "query.intr": "spironolactone",
+        "pageSize": 3,
+        "countTotal": "true",
+        "format": "json"
+      },
+      "responseKind": "clinicaltrials",
+      "retrievedAt": "2026-11-03T13:49:26.353661+00:00",
+      "status": "passed",
+      "httpStatus": 200,
+      "rawFile": "raw/phase-1/20261103T134919197787Z/clinicaltrials-search.json",
+      "sha256": "4b90f55ac46afc9019a3032068bf5a8a1a41df3e3425b2152d68b949251d7d7f",
+      "returnedRecords": 3,
+      "availableRecords": 331,
+      "hasNextPage": true
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 # Spironolactone Atlas
 
-A planned data-driven, animated single-page educational study of spironolactone utilisation and pharmacovigilance. This checkout is setup only: the page renders “Spironolactone Atlas — setup complete” with one Tailwind utility and a reduced-motion-aware Motion fade-in. No datasets, charts, sections or design have been implemented.
+A planned data-driven, animated single-page educational study of spironolactone utilisation and pharmacovigilance. Setup and Phase 1 research foundation are complete. The page still renders only “Spironolactone Atlas — setup complete” with one Tailwind utility and a reduced-motion-aware Motion fade-in. No public datasets, charts, sections or design have been implemented.
+
+See [project phases](docs/PHASES.md), [source and evidence review](docs/RESEARCH_FOUNDATION.md), [data protocol](docs/DATA_PROTOCOL.md), and [API check logs](data-pipeline/METHODOLOGY.md). Phase 1 records unresolved Indian-label and MedDRA mapping requirements; it is not a full evidence appraisal.
 
 ## Frontend setup
 
@@ -72,6 +74,6 @@ CLAUDE.md
 components.json
 ```
 
-The original supplied PRD is preserved at the repository root and copied unchanged to `docs/PRD.md`. It lists fields but no formal JSON schemas; `src/data/types.ts` is a provisional contract to review during pipeline work. No medical statements in the PRD have been independently verified in this setup session.
+The original supplied PRD is preserved at the repository root and copied unchanged to `docs/PRD.md`. It lists fields but no formal JSON schemas; `src/data/types.ts` is a provisional contract refined during source review. The Phase 1 review identifies corrections to seed assumptions without altering the original PRD.
 
-See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). The next phase should confirm source queries and data contracts before drawing conclusions or implementing visualizations. Design and frontend work require the user's next instruction.
+See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). The next phase implements full extraction, cleaning and validation under the documented protocol. Design and frontend work remain separate later phases.
