@@ -1,0 +1,17 @@
+{
+  "questionKey": "4f2d7651",
+  "seedKey": "e902b290",
+  "scope": "direction",
+  "mode": "read",
+  "answer": {
+    "optionId": "canon",
+    "steer": "",
+    "comp": ".impeccable/mocks/decision/e902b290-canon.png",
+    "buildPath": "comp",
+    "buildPathFlipped": false
+  },
+  "selectedDirection": "Clinical Editorial Standard",
+  "approvalScope": "Visual direction only; shape brief confirmation and the later composition round remain pending. No implementation authorization.",
+  "qualityBenchmark": "Awaiting the requested two or three comparator products.",
+  "choiceTelemetry": "Attempted once; helper reported choice ping skipped."
+}

@@ -47,6 +47,8 @@ The project connects product-specific label scope, a reproducible reporting-data
 
 Preserve the name Spironolactone Atlas and the PRD's clinical precision, editorial storytelling and calm, confident voice. The supplied PRD's section 8 is the visual-direction input; shape will resolve its composition and motion with the user rather than treating the placeholder as a design system. No logo, existing campaign assets or finished website identity has been supplied.
 
+The user selected **Clinical Editorial Standard** in the shape direction round: a familiar editorial hierarchy, clear section navigation, headline statistics and stacked chart sections, retaining the PRD's deep ink ground, off-white text and coral/teal roles. Comp-first remains the confirmed workflow. Comparator products are pending; the final shape brief and later composition round are not yet approved. The selected decision image is `.impeccable/mocks/decision/e902b290-canon.png`.
+
 ## Evidence on Hand
 
 - `docs/PRD.md`: original requirements, retained unchanged; seed medical content is not automatically verified fact.
