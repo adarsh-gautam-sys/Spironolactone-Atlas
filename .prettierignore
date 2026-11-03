@@ -1,0 +1,7 @@
+node_modules/
+dist/
+package-lock.json
+data-pipeline/.venv/
+data-pipeline/raw/
+Spironolactone Atlas — Product Requirements Document.md
+docs/PRD.md

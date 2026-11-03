@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+/* Intentionally empty until the design phase. Do not apply these tokens yet. */
+:root {
+  --color-background: ;
+  --color-surface: ;
+  --color-foreground: ;
+  --color-muted: ;
+  --color-accent: ;
+  --color-positive: ;
+  --color-warning: ;
+  --color-danger: ;
+  --font-display: ;
+  --font-body: ;
+  --font-mono: ;
+  --radius-sm: ;
+  --radius-md: ;
+  --radius-lg: ;
+}
