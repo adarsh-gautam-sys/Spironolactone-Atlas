@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "reference": "docs/RESEARCH_FOUNDATION.md; terminology mapping only, no label-status inference",
+  "exact": {
+    "hypertension": "hypertension-unspecified",
+    "blood pressure increased": "blood-pressure-increased",
+    "cardiac failure": "heart-failure-unspecified",
+    "heart failure": "heart-failure-unspecified",
+    "cardiac failure congestive": "heart-failure-unspecified",
+    "oedema": "edema-unspecified",
+    "edema": "edema-unspecified",
+    "acne": "acne",
+    "acne vulgaris": "acne",
+    "hirsutism": "hirsutism",
+    "polycystic ovaries": "polycystic-ovaries-unspecified",
+    "polycystic ovary syndrome": "pcos",
+    "alopecia androgenetic": "androgenetic-alopecia-population-unspecified",
+    "proteinuria": "proteinuria",
+    "hyperaldosteronism": "hyperaldosteronism-type-unspecified"
+  }
+}

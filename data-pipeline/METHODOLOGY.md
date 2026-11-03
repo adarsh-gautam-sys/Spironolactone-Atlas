@@ -51,3 +51,11 @@ The [research foundation](../docs/RESEARCH_FOUNDATION.md) lists reviewed labels,
 | Cleaning / mappings / deduplication |       |
 | Export file                         |       |
 | Limitations                         |       |
+
+## Phase 2 extraction and publication — 3 November 2026
+
+The [phase-2 audit manifest](clean/phase-2-audit.json) is the per-request log: exact parameters, UTC retrieval timestamps, raw hashes, API update dates, row counts, partitions, repairs and exclusions. The [results report](../docs/PHASE_2_RESULTS.md) summarizes reconciliation. See [PIPELINE.md](PIPELINE.md) for commands and counting rules.
+
+All 22 annual event partitions reconciled to independent first-receipt-date count queries. Daily mismatches were repaired by replacing disputed dates with narrow queries, with original responses retained. Pagination hit totals were observed to vary and were not used as the final denominator. An offline replay reproduced the final cohort before publication.
+
+Publication includes aggregate event data, topic/year publication counts, registered studies, product-label reference indexes, and explicitly sourced manual indication/interaction summaries. Full label text remains in local raw caches. Medical evidence grading and India/SOC gaps remain pending; unknown reported-use classifications are preserved.

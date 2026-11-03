@@ -13,6 +13,7 @@ __pycache__/
 .pytest_cache/
 *.tsbuildinfo
 *.log
+data-pipeline/clean/exports/
 .DS_Store
 Thumbs.db
 .vscode/

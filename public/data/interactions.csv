@@ -1,0 +1,8 @@
+id,drugOrClass,effect,severity,mechanism,managementNote,sourceIds
+asa,Acetylsalicylic acid,May reduce spironolactone efficacy.,,,Observe clinical response; consult the full label.,"[""US-CAROSPIR""]"
+cyp-substrates,CYP2C8 and CYP3A substrates,Exposure to coadministered substrates may increase.,,,Consult the label for substrate-specific considerations.,"[""US-CAROSPIR""]"
+cholestyramine,Cholestyramine,Hyperkalemic metabolic acidosis has been reported with concomitant use.,,,,"[""US-CAROSPIR""]"
+digoxin,Digoxin,Spironolactone and metabolites can affect apparent digoxin exposure and assay interpretation.,,,Use an assay without interference and follow the full label.,"[""US-CAROSPIR""]"
+lithium,Lithium,Reduced lithium clearance may increase lithium toxicity risk.,,,Monitor lithium levels as specified in the source label.,"[""US-CAROSPIR""]"
+nsaids,NSAIDs,May reduce diuretic and antihypertensive effects.,,,Monitor the desired clinical effect as specified in the source label.,"[""US-CAROSPIR""]"
+potassium-increasing-agents,Potassium supplements and potassium-increasing drugs,May increase the risk of severe hyperkalemia.,,,Monitor potassium; consult the label for drug-specific precautions.,"[""US-CAROSPIR""]"

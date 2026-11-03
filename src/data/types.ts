@@ -86,7 +86,8 @@ export interface AdverseReaction {
   ageBand: string | null;
   reportYear: number | null;
   country: string | null;
-  coSuspectDrugs: string[];
+  /** Null when this aggregate does not include co-suspect detail. */
+  coSuspectDrugs: string[] | null;
   sourceIds: string[];
 }
 
@@ -131,4 +132,58 @@ export interface ReportSummary {
   country: string | null;
   reportCount: number;
   sourceIds: string[];
+}
+
+export interface SeriousnessCriterionCount {
+  criterion: string;
+  reportCount: number;
+  sourceIds: string[];
+}
+
+export interface ReactionOutcomeCount {
+  outcome: string | null;
+  reportCount: number;
+  sourceIds: string[];
+}
+
+export interface CoreportedDrugCount {
+  reportedDrug: string;
+  reportCount: number;
+  sourceIds: string[];
+}
+
+export interface TrialRecord {
+  nctId: string;
+  startYear: number | null;
+  status: string | null;
+  phases: string[];
+  conditions: string[];
+  countries: string[];
+  sourceIds: string[];
+}
+
+export interface LabelSection {
+  id: string;
+  product: string;
+  jurisdiction: Jurisdiction;
+  setId: string;
+  effectiveDate: string | null;
+  section: string;
+  text: string;
+  sourceIds: string[];
+}
+
+export interface ExportContracts {
+  indications: Dataset<Indication>;
+  interactions: Dataset<Interaction>;
+  'adverse-reactions': Dataset<AdverseReaction>;
+  'adverse-reactions-filtered': Dataset<AdverseReaction>;
+  'report-summary': Dataset<ReportSummary>;
+  usage: Dataset<ReportedUsage>;
+  'seriousness-criteria': Dataset<SeriousnessCriterionCount>;
+  'reaction-outcomes': Dataset<ReactionOutcomeCount>;
+  'hyperkalaemia-coreported': Dataset<CoreportedDrugCount>;
+  'research-publications': Dataset<ResearchCount>;
+  trials: Dataset<TrialRecord>;
+  'label-sections': Dataset<LabelSection>;
 }

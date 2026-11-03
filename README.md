@@ -1,8 +1,10 @@
 # Spironolactone Atlas
 
-A planned data-driven, animated single-page educational study of spironolactone utilisation and pharmacovigilance. Setup and Phase 1 research foundation are complete. The page still renders only “Spironolactone Atlas — setup complete” with one Tailwind utility and a reduced-motion-aware Motion fade-in. No public datasets, charts, sections or design have been implemented.
+A planned data-driven, animated single-page educational study of spironolactone utilisation and pharmacovigilance. The page renders “Spironolactone Atlas — setup complete” with one Tailwind utility and a reduced-motion-aware Motion fade-in. See the phase roadmap for current progress.
 
 See [project phases](docs/PHASES.md), [source and evidence review](docs/RESEARCH_FOUNDATION.md), [data protocol](docs/DATA_PROTOCOL.md), and [API check logs](data-pipeline/METHODOLOGY.md). Phase 1 records unresolved Indian-label and MedDRA mapping requirements; it is not a full evidence appraisal.
+
+The [Phase 2 pipeline guide](data-pipeline/PIPELINE.md) explains extraction, cache/resume, counting, validation and publication commands. JSON/CSV exports are generated from reconciled source snapshots; evidence grades and unresolved label classifications are deferred to appraisal.
 
 ## Frontend setup
 
@@ -76,4 +78,4 @@ components.json
 
 The original supplied PRD is preserved at the repository root and copied unchanged to `docs/PRD.md`. It lists fields but no formal JSON schemas; `src/data/types.ts` is a provisional contract refined during source review. The Phase 1 review identifies corrections to seed assumptions without altering the original PRD.
 
-See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). The next phase implements full extraction, cleaning and validation under the documented protocol. Design and frontend work remain separate later phases.
+See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). Phase 2 exports and their audit are complete; see [the results](docs/PHASE_2_RESULTS.md). The next phase appraises the data and evidence. Design and frontend work remain separate later phases.

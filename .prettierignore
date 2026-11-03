@@ -3,5 +3,8 @@ dist/
 package-lock.json
 data-pipeline/.venv/
 data-pipeline/raw/
+data-pipeline/clean/exports/
+data-pipeline/clean/phase-2-audit.json
+public/data/*.json
 Spironolactone Atlas — Product Requirements Document.md
 docs/PRD.md

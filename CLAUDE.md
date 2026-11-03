@@ -1,6 +1,6 @@
 # Project conventions
 
-- Follow `docs/PHASES.md`. Phase 1 research is authorized; design and frontend implementation require a later instruction.
+- Follow `docs/PHASES.md`. Phase 2 pipeline work is authorized; design and frontend implementation require a later instruction.
 - Use npm, Vite, React and TypeScript strict mode. Import project files through `@/` where useful.
 - Use Tailwind CSS v4 through its Vite plugin. Keep design-token placeholders in `src/index.css`; do not choose values during setup.
 - Import Motion from `motion/react`, never `framer-motion`.
@@ -12,3 +12,5 @@
 - Keep API keys in local environment files. The browser reads only public static exports from `public/data/`.
 - Use `data-pipeline/.venv` for Python; log extraction in `data-pipeline/METHODOLOGY.md`.
 - Run `npm run typecheck`, `npm run lint`, `npm run format:check` and `npm run build` before committing changes.
+
+- After each major completed update, commit and push to https://github.com/adarsh-gautam-sys/Spironolactone-Atlas. Preserve existing remote history and never include environment files, API keys or raw response caches.
