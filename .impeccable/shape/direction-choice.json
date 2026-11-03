@@ -11,7 +11,7 @@
     "buildPathFlipped": false
   },
   "selectedDirection": "Clinical Editorial Standard",
-  "approvalScope": "Visual direction only; shape brief confirmation and the later composition round remain pending. No implementation authorization.",
-  "qualityBenchmark": "Awaiting the requested two or three comparator products.",
+  "approvalScope": "Visual direction, shape brief and Clinical Editorial composition confirmed. Phase 4 design handoff complete; Phase 5 frontend implementation is next.",
+  "qualityBenchmark": "No additional comparator sites supplied; use the selected decision comp as the visual benchmark for this round.",
   "choiceTelemetry": "Attempted once; helper reported choice ping skipped."
 }

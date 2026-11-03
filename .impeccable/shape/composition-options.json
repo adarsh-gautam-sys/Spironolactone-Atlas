@@ -1,0 +1,53 @@
+{
+  "title": "Choose the Atlas composition",
+  "question": "Which composition should carry forward? Approve one, or use the note to combine, revise or reject them. Chart proportions will be bound exactly to the exported data in implementation.",
+  "options": [
+    {
+      "id": "clinical-editorial",
+      "label": "1 · Clinical Editorial",
+      "thesis": "The selected centered introduction leads into headline figures and stacked charts.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "centered editorial hierarchy",
+        "four headline figures",
+        "stacked reading sequence"
+      ],
+      "viewport": "A prominent centered title and paired entry actions sit above four statistics, followed by the first reporting chart.",
+      "risk": "The introduction takes more space before the reader reaches the first explanation.",
+      "comp": ".impeccable/mocks/composition/01-clinical-editorial.png"
+    },
+    {
+      "id": "explanation-beside-evidence",
+      "label": "2 · Explanation Beside Evidence",
+      "thesis": "The introduction and a reporting figure explain the subject together in the first view.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "split introduction and chart",
+        "flat metric strip",
+        "source-aligned captions"
+      ],
+      "viewport": "The title and reading actions occupy the left, the reaction-term chart the right, with cohort context and the next reading region below.",
+      "risk": "The opening reporting chart needs a clear caveat so report counts cannot be read as treatment risk.",
+      "comp": ".impeccable/mocks/composition/02-explanation-beside-evidence.png"
+    },
+    {
+      "id": "guided-chapter-reading",
+      "label": "3 · Guided Chapter Reading",
+      "thesis": "Persistent chapter wayfinding frames a focused lesson about what the reporting data can establish.",
+      "palette": ["#0B1020", "#F3F0E8", "#F48F7A", "#65B8AC"],
+      "materials": [
+        "labelled chapter rail",
+        "compact introduction",
+        "one large teaching observation"
+      ],
+      "viewport": "A left chapter rail supports a compact title and a prominent indication-completeness lesson, with evidence details beginning below.",
+      "risk": "The rail uses horizontal space; mobile must collapse it into an accessible chapter control. The preview's completeness bar needs the exact 52.2/47.8 ratio in code.",
+      "comp": ".impeccable/mocks/composition/03-guided-chapter-reading.png"
+    }
+  ],
+  "steer": true,
+  "buildPath": {
+    "value": "comp",
+    "toggle": false
+  }
+}

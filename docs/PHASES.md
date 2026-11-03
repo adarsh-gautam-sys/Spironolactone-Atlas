@@ -8,7 +8,7 @@ The seven-day PRD schedule is a sequence of deliverables, not a fixed deadline. 
 | 1 — Research foundation | Source review, bounded API tests, indication/evidence shortlist, draft data contracts | Complete with documented source gaps, 3 November 2026                        |
 | 2 — Data pipeline       | Full extraction, cleaning, mappings, validation, typed JSON/CSV exports               | Complete with documented appraisal gaps, 3 November 2026                     |
 | 3 — Analysis            | Descriptive results, uncertainty and limitations, evidence grading, insight shortlist | Complete bounded appraisal; clinical/source gaps documented, 3 November 2026 |
-| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | In progress: Clinical Editorial Standard selected; shape brief pending       |
+| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | Complete: Clinical Editorial composition approved, 3 November 2026           |
 | 5 — Frontend            | Sections, charts, tables and selected effects                                         | Not started                                                                  |
 | 6 — Quality and launch  | Accessibility, performance, deployment and LinkedIn assets                            | Not started                                                                  |
 
@@ -35,3 +35,7 @@ See [pipeline results](PHASE_2_RESULTS.md), [reproduction guide](../data-pipelin
 ## Phase 3 deliverables
 
 See [analysis and diagnostic figures](PHASE_3_ANALYSIS.md), [targeted evidence appraisal](EVIDENCE_APPRAISAL.md), [five draft takeaways](INSIGHT_SHORTLIST.md), and [content decisions](CONTENT_DECISIONS.md). The reaction-case correction was pushed separately as commit 05f688a. Next is Phase 4 design review; the website remains the setup placeholder.
+
+## Phase 4 deliverables
+
+See [confirmed shape brief](SHAPE_BRIEF.md) and [approved design handoff](PHASE_4_DESIGN.md). The approved image and prompt sidecar are under .impeccable/mocks/composition/; the surface brief is registered for src/App.tsx. Phase 5 implements the approved composition and extends it to the full narrative, charts and interactions. The website still renders the setup placeholder.

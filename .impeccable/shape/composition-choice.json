@@ -1,0 +1,16 @@
+{
+  "questionKey": "a65080f6",
+  "answer": {
+    "optionId": "clinical-editorial",
+    "steer": "",
+    "comp": ".impeccable/mocks/composition/01-clinical-editorial.png",
+    "buildPath": "comp",
+    "buildPathFlipped": false
+  },
+  "approved": true,
+  "approvalScope": "Clinical Editorial composition approved for subsequent frontend implementation. Phase 4 design handoff complete; Phase 5 not started.",
+  "corrections": [
+    "Use exact exported chart proportions rather than the generated image's approximate lengths.",
+    "Active navigation follows the actual visible section rather than the mockup's illustrative selection."
+  ]
+}

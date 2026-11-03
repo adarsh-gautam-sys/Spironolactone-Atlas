@@ -41,13 +41,13 @@ The project connects product-specific label scope, a reproducible reporting-data
 - Replace the proposed off-label prescribing-share donut with indication completeness and explicitly named topic counts. Source-term matches do not establish real-world prescribing prevalence or confirmed label status.
 - Separate report-level seriousness, overlapping seriousness criteria and reaction-level outcomes. Co-reported drug names are not a measured interaction-risk ranking.
 - India-specific approval comparisons and a MedDRA SOC/body-map output remain unresolved. Do not fabricate those inputs or imply that a missing source means a use is unapproved.
-- Current authorization is Impeccable **shape**: planning and a brief for review. Website implementation follows a later instruction.
+- The Impeccable shape brief is confirmed in `docs/SHAPE_BRIEF.md`. The user approved Clinical Editorial in the comp-first composition round. Phase 4 design is complete; Phase 5 frontend implementation is next, using `docs/PHASE_4_DESIGN.md` and the approved comp.
 
 ## Brand Commitments
 
 Preserve the name Spironolactone Atlas and the PRD's clinical precision, editorial storytelling and calm, confident voice. The supplied PRD's section 8 is the visual-direction input; shape will resolve its composition and motion with the user rather than treating the placeholder as a design system. No logo, existing campaign assets or finished website identity has been supplied.
 
-The user selected **Clinical Editorial Standard** in the shape direction round: a familiar editorial hierarchy, clear section navigation, headline statistics and stacked chart sections, retaining the PRD's deep ink ground, off-white text and coral/teal roles. Comp-first remains the confirmed workflow. Comparator products are pending; the final shape brief and later composition round are not yet approved. The selected decision image is `.impeccable/mocks/decision/e902b290-canon.png`.
+The user selected **Clinical Editorial Standard** in the shape direction round: a familiar editorial hierarchy, clear section navigation, headline statistics and stacked chart sections, retaining the PRD's deep ink ground, off-white text and coral/teal roles. Comp-first remains the confirmed workflow, and the shape brief is confirmed. No additional comparator sites were supplied. The approved composition is `.impeccable/mocks/composition/01-clinical-editorial.png`, reusing the selected decision image unchanged. Its sidecar records approval, and the surface brief for `src/App.tsx` carries the composition handoff.
 
 ## Evidence on Hand
 

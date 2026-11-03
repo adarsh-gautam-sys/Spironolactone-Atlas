@@ -1,6 +1,6 @@
 # Project conventions
 
-- Follow `docs/PHASES.md`. Impeccable shape and Phase 4 design planning are authorized; frontend implementation requires a later instruction.
+- Follow `docs/PHASES.md`. Phase 4 design is complete and the Clinical Editorial composition is approved. Phase 5 frontend implementation is next; use the approved comp and `docs/PHASE_4_DESIGN.md` as the handoff.
 - Use npm, Vite, React and TypeScript strict mode. Import project files through `@/` where useful.
 - Use Tailwind CSS v4 through its Vite plugin. Keep design-token placeholders in `src/index.css`; do not choose values during setup.
 - Import Motion from `motion/react`, never `framer-motion`.
