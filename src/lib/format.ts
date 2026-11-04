@@ -7,6 +7,8 @@ export const title = (value: string) =>
     ? value.charAt(0).toUpperCase() +
       value.slice(1).replaceAll('_', ' ').replaceAll('-', ' ')
     : 'Unknown';
+export const appraisalDirection = (value: string) =>
+  title(value).replace(/\bpms\b/gi, 'PMS');
 export const date = (value: string) =>
   new Intl.DateTimeFormat('en-GB', {
     day: 'numeric',

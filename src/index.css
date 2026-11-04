@@ -42,7 +42,7 @@ body {
 }
 ::selection {
   background: var(--color-accent);
-  color: var(--color-background);
+  color: var(--color-foreground);
 }
 a {
   color: inherit;
@@ -133,6 +133,9 @@ p {
 .hero {
   text-align: center;
   padding-top: 47px;
+}
+#top {
+  scroll-margin-top: 80px;
 }
 .hero-eyebrow {
   font: 400 17px/1.5 var(--font-mono);
@@ -828,14 +831,15 @@ td {
 }
 .evidence-topline {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 11px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
 }
-.evidence-topline > span + span {
-  color: var(--color-muted);
-  text-transform: capitalize;
+.evidence-direction {
+  color: var(--color-foreground);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.55;
 }
 .grade {
   font: 12px/1.4 var(--font-mono);
@@ -904,6 +908,10 @@ td {
   background: rgb(2 5 12 / 0.78);
 }
 .drawer-header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--color-background);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1186,6 +1194,9 @@ meter::-webkit-meter-optimum-value {
   font-size: 15px;
   line-height: 1.7;
   min-width: 650px;
+}
+.table-hint {
+  display: none;
 }
 .interaction-table thead th {
   font-size: 13px;
@@ -1529,7 +1540,7 @@ meter::-webkit-meter-optimum-value {
     margin-bottom: 23px;
   }
   .source-note {
-    font-size: 11px;
+    font-size: 12px;
   }
   .subsection-heading {
     margin-top: 45px;
@@ -1630,6 +1641,9 @@ meter::-webkit-meter-optimum-value {
   }
   .interaction-table {
     font-size: 13px;
+  }
+  .table-hint {
+    display: block;
   }
   .reading-guide li {
     grid-template-columns: 1fr;

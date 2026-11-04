@@ -58,6 +58,16 @@ The requested Impeccable clarify pass addresses the critique's incomplete deskto
 
 Production checks at 1280, 640 and 360 px confirmed existing targets, matching menu labels, keyboard opening/closing and research/interaction navigation, mobile menu closure after selection, no body horizontal overflow and no captured console errors. Evidence is saved in `.impeccable/review/clarify/`. These are responsive layout checks; a full browser-zoom and screen-reader audit remains part of Phase 6. The prior critique score is not re-scored.
 
+## Polish follow-up
+
+The requested Impeccable polish pass used the archived `2026-11-04T09-55-04Z__src-app-tsx.md` critique and a fresh desktop/mobile inspection. The mobile `#top` offset now restores the full approved introduction: after selecting the wordmark, scroll position is 0 and the eyebrow begins at y118 below the 76 px header, replacing the clipped y66 arrival.
+
+Evidence qualifiers are 15 px, medium, sentence-case ink text below their grade, in both cards and the appraisal drawer. All ten source-coded qualifier word sequences are preserved; PMS retains its acronym capitalization. The drawer header remains visible during content scrolling, with tested click/Escape dismissal returning focus to the originating appraisal. Each new appraisal resets to its beginning after a prior appraisal was scrolled. Non-empty filtered evidence now has a toolbar reset; the existing empty state retains its reset, with only one visible Clear filters action in either state.
+
+Shared mobile source notes increase from 11 to 12 px. A mobile cue explains horizontal table scrolling, and keyboard arrows move the focusable interaction table. Selected text uses ink on coral rather than paper on coral. These are local type, contrast, anchor and control refinements; the original opening, data, medical interpretation, chart set and two bounded effects remain intact.
+
+Production browser checks cover 360, 640, 1280 and 1920 px, with no body overflow, qualifier clipping or captured console errors. Typecheck/build, lint and all three data tests pass; a separate check confirms all ten qualifiers preserve their source words. Evidence is in `.impeccable/review/polish/`. The critique's four priorities are addressed across distill, clarify and polish, but its historical 29/40 score is not replaced by a new score. Full screen-reader, browser-zoom, cross-browser and Lighthouse audits remain Phase 6; source-title expansion is deferred until verified titles are available.
+
 ## Remaining Phase 6 work
 
 Run independent automated accessibility checks, Lighthouse/mobile performance and real device/reduced-motion validation; verify print output and hosted download behaviour. Configure the deployment URL/base, canonical URL and absolute share metadata for the chosen host. Deploy only in the launch phase and verify the live page and social preview. No Lighthouse score, WCAG conformance claim or live deployment is asserted here. India-specific label and licensed MedDRA hierarchy gaps remain open; the site presents those limits explicitly.

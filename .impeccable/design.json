@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T10:18:56.991Z",
+  "generatedAt": "2026-11-04T10:34:35.055Z",
   "title": "Design System: Spironolactone Atlas",
   "extensions": {
     "colorMeta": {
@@ -288,8 +288,8 @@
       "kind": "card",
       "refersTo": "evidence-item",
       "description": "An actual Acne appraisal entry: open reading block, top rule, grade, question and trailing action.",
-      "html": "<button class=\"ds-evidence\" type=\"button\"><span class=\"ds-evidence-topline\"><span class=\"ds-evidence-grade\">Grade B</span><span>benefit</span></span><h4>Acne</h4><p>Patient-reported acne improvement in adult women, alongside permitted topical treatment</p><span class=\"ds-evidence-action\">Read appraisal <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></button>",
-      "css": ".ds-evidence{background:none;color:var(--color-foreground);font-family:var(--font-body);text-align:left;border:0;border-top:1px solid #626b7c;padding:26px 0 30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px;transition:color .2s;cursor:pointer}.ds-evidence:hover h4{color:var(--color-positive)}.ds-evidence:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-evidence h4{font:600 30px/1.15 var(--font-display);margin:0}.ds-evidence p{font:400 14px/1.7 var(--font-body);color:var(--color-muted);margin:0}.ds-evidence-topline{display:flex;align-items:center;gap:12px;font-size:11px;flex-wrap:wrap}.ds-evidence-topline>span+span{color:var(--color-muted);text-transform:capitalize}.ds-evidence-grade{font:400 12px/1.4 var(--font-mono);border:1px solid var(--color-foreground);padding:5px 8px;display:inline-block;border-radius:3px}.ds-evidence-action{display:inline-flex;align-items:center;gap:8px;font-size:13px;margin-top:auto;padding-top:8px}@media(max-width:760px){.ds-evidence{padding-block:23px}.ds-evidence h4{font-size:29px}}@media(prefers-reduced-motion:reduce){.ds-evidence{transition-duration:.01ms}}"
+      "html": "<button class=\"ds-evidence\" type=\"button\"><span class=\"ds-evidence-topline\"><span class=\"ds-evidence-grade\">Grade B</span><span class=\"ds-evidence-direction\">Benefit</span></span><h4>Acne</h4><p>Patient-reported acne improvement in adult women, alongside permitted topical treatment</p><span class=\"ds-evidence-action\">Read appraisal <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></button>",
+      "css": ".ds-evidence{background:none;color:var(--color-foreground);font-family:var(--font-body);text-align:left;border:0;border-top:1px solid #626b7c;padding:26px 0 30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px;transition:color .2s;cursor:pointer}.ds-evidence:hover h4{color:var(--color-positive)}.ds-evidence:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-evidence h4{font:600 30px/1.15 var(--font-display);margin:0}.ds-evidence p{font:400 14px/1.7 var(--font-body);color:var(--color-muted);margin:0}.ds-evidence-topline{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.ds-evidence-direction{color:var(--color-foreground);font-size:15px;font-weight:500;line-height:1.55}.ds-evidence-grade{font:400 12px/1.4 var(--font-mono);border:1px solid var(--color-foreground);padding:5px 8px;display:inline-block;border-radius:3px}.ds-evidence-action{display:inline-flex;align-items:center;gap:8px;font-size:13px;margin-top:auto;padding-top:8px}@media(max-width:760px){.ds-evidence{padding-block:23px}.ds-evidence h4{font-size:29px}}@media(prefers-reduced-motion:reduce){.ds-evidence{transition-duration:.01ms}}"
     },
     {
       "name": "Product Segments",
@@ -311,7 +311,7 @@
       "kind": "custom",
       "description": "The quiet linked provenance line used beside charts; sample from the mechanism introduction.",
       "html": "<p class=\"ds-source-note\"><a href=\"https://labeling.pfizer.com/showlabeling.aspx?id=520#S12.1\">Aldactone US label, §12.1</a> · Revised November 2025 · Reviewed 3 Nov 2026</p>",
-      "css": ".ds-source-note{color:var(--color-muted);font:400 12px/1.75 var(--font-body);margin:20px 0 0;max-width:100%}.ds-source-note a{color:inherit;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,var(--color-muted),transparent 45%)}.ds-source-note a:hover{text-decoration-color:var(--color-accent)}.ds-source-note a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-source-note{font-size:11px}}"
+      "css": ".ds-source-note{color:var(--color-muted);font:400 12px/1.75 var(--font-body);margin:20px 0 0;max-width:100%}.ds-source-note a{color:inherit;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,var(--color-muted),transparent 45%)}.ds-source-note a:hover{text-decoration-color:var(--color-accent)}.ds-source-note a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-source-note{font-size:12px}}"
     },
     {
       "name": "Chapter Index",

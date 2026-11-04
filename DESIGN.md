@@ -146,7 +146,7 @@ The palette pairs warm neutral paper with ink, reserving brighter coral and teal
 - **Headline:** section introductions use the fluid headline role; mobile section headings use (41px). Headings balance their line breaks.
 - **Title:** the common third-level heading role. Chart headings are (28px), becoming (26px) on mobile; evidence titles are (30px), becoming (29px).
 - **Body:** the frontmatter records the recurring dense explanation role. Section introductions are larger (21px / 1.65), becoming (17px / 1.7) on mobile. Explanatory measures commonly stop at (64–70ch).
-- **Label:** compact grade badges use the monospaced label role; source notes use Inter (12px / 1.75), becoming (11px) on mobile. Numerical chart labels use monospaced tabular figures.
+- **Label:** compact grade badges use the monospaced label role; source notes use Inter (12px / 1.75) on desktop and mobile. Numerical chart labels use monospaced tabular figures.
 
 **The Three Voices Rule.** Use Fraunces for editorial headings, Inter for explanations and controls, and JetBrains Mono for values and compact classifications.
 
@@ -184,9 +184,13 @@ Primary hover changes to deep teal; outline hover changes to ink with paper text
 
 Grade badges are small outlined monospaced classifications with padding from the frontmatter. A uses deep teal, B ink, and C muted ink. Each retains its visible grade text; the accompanying direction text is separate. These labels are descriptive, not interactive filter chips.
 
+Evidence direction appears below its grade in sentence case, using medium Inter (15px / 1.55) and ink. The same hierarchy applies to the appraisal drawer; retain every qualifier and acronym when formatting source-coded direction text.
+
 ### Cards / Containers
 
 Evidence entries are open reading blocks with a top rule, transparent background and no enclosing box or shadow. Their vertical layout places the grade/direction line before a serif title and muted explanation; the appraisal action sits at the bottom. Hover changes the title to deep teal; keyboard focus retains the global outline. The evidence drawer uses a width `min(620px, 100%)`, padding (32px 40px), and padding (22px) on mobile.
+
+The drawer header stays visible while its content scrolls, preserving the Close action. Each appraisal opens at the beginning, including after a different appraisal was scrolled. Evidence filters offer one Clear filters action in the toolbar for non-empty filtered results, or beside the empty-state message when no appraisals match.
 
 ### Inputs / Fields
 
@@ -205,6 +209,8 @@ Adjacent outlined buttons use ink/paper inversion for the pressed state, with `a
 ### Charts and Source Notes
 
 Bar rows align a text label, flat rectangular fill and monospaced number. Coral is first and teal follows; quantity is also explicit in text. Chart blocks begin with a rule, serif heading and muted takeaway, then end with a quiet source note and native View data disclosure. Data tables use fine row rules and paper-colored sticky headings inside a bounded scrolling region. Preserve these text and table companions when reusing a chart.
+
+Wide interaction tables retain their focusable scrolling region and add a small mobile cue for off-screen columns. Text selection uses coral behind ink so selected content stays readable.
 
 ### Mechanism and Motion
 

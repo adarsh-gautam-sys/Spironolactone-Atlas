@@ -143,6 +143,9 @@ export function Interactions({
               {filtered.length} of {dataset.data.data.length} entries · Severity
               not graded in this extract
             </p>
+            <p className="caption table-hint">
+              Scroll horizontally to read any off-screen columns.
+            </p>
             <div
               className="table-scroll"
               role="region"

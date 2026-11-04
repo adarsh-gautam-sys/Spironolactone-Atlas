@@ -9,6 +9,8 @@ related_targets:
     'src/sections/ReadingGuide.tsx',
     'src/components/ui/ChapterIndex.tsx',
     'src/components/ui/Navigation.tsx',
+    'src/sections/Evidence.tsx',
+    'src/sections/Interactions.tsx',
   ]
 ---
 
@@ -20,5 +22,6 @@ related_targets:
 - **Action / proof:** “Read the story” opens an 86-word introduction with three existing source-linked takeaways, followed by a continuation into medicine context; “Explore data” jumps to reporting. The former five-item recap near methods is consolidated into this introduction. Native instant anchors, mobile chapter menu, scoped evidence drawer, product-label comparisons, reporting subgroup filters, research-topic selection and searchable/sortable label-derived interactions work from static exports. Every chart has a named source, retrieval date, denominator or unit, takeaway and data-table access.
 - **Interaction / motion:** `motion/react`; adapted CountUp for one introductory cohort statistic and BlurText for the short eyebrow. Two React Bits components used, maximum six. Reduced motion shows complete content immediately. No WebGL or Lenis activation. Source data is not hidden by scroll entrances.
 - **Complete wayfinding:** “Browse all chapters” follows the short read and reveals all seven destinations, including research activity and interactions, on desktop and mobile. The index and mobile Chapters menu share labels and targets from `src/lib/chapters.ts`; the original five-link desktop header is preserved. The native disclosure supports keyboard use and leaves the short read uncluttered when closed.
+- **Polished reading states:** the `#top` offset preserves the full pinned introduction below the sticky header. Evidence direction is sentence case, 15 px, stacked below its grade in cards and the drawer; wording and PMS capitalization are preserved. The drawer Close action remains visible during scrolling, filters have one contextual reset action, shared source notes stay 12 px on mobile, and the interaction table exposes a mobile scroll cue. Coral text selection uses ink foreground.
 - **Sequence:** approved introduction/opening chart, three-point short read, medicine context, uses/evidence, reporting, research, interactions, methods and sources. The short read reuses the prior recap's wording on denominator, missingness and research/evidence; remaining recap points stay explicit in their detailed contexts. India-specific approval and licensed SOC mapping remain explicit gaps. Reporting counts are not incidence/causality; co-reported names are not interaction risk; evidence grades are project summaries, not formal GRADE.
 - **Verification boundary:** production captures at 360, 1280 and reference 1487 px are recorded in `.impeccable/review/`; current files are listed in `docs/PHASE_5_FRONTEND.md`. The hero checkpoint was recaptured against the user's original. Long-page capture failed, so first-viewport and section-viewport screenshots carry the visual evidence. Full Lighthouse/accessibility/launch verification is Phase 6.

@@ -4,7 +4,7 @@ import type { JsonResource } from '@/hooks/useJson';
 import type { Dataset, Indication } from '@/data/types';
 import type { Appraisal, EvidenceData } from '@/data/site-types';
 import { SourceNote } from '@/components/ui/SourceNote';
-import { date, topicName } from '@/lib/format';
+import { appraisalDirection, date, topicName } from '@/lib/format';
 
 const focuses: Record<string, string> = {
   acne: 'Skin & hair',
@@ -39,6 +39,11 @@ export function Evidence({
   const show = (item: Appraisal) => {
     setSelected(item);
     dialog.current?.showModal();
+    if (dialog.current) dialog.current.scrollTop = 0;
+  };
+  const clearFilters = () => {
+    setGrade('all');
+    setFocus('all');
   };
   return (
     <section id="evidence" className="atlas-section" data-chapter="evidence">
@@ -146,6 +151,11 @@ export function Evidence({
               ))}
             </select>
           </label>
+          {(grade !== 'all' || focus !== 'all') && visible.length > 0 && (
+            <button className="text-button" onClick={clearFilters}>
+              Clear filters
+            </button>
+          )}
         </div>
         <p className="caption">
           Clinical topic groups are editorial navigation, not MedDRA
@@ -167,7 +177,9 @@ export function Evidence({
                     <span className={`grade grade-${item.grade}`}>
                       Grade {item.grade}
                     </span>
-                    <span>{item.direction.replaceAll('-', ' ')}</span>
+                    <span className="evidence-direction">
+                      {appraisalDirection(item.direction)}
+                    </span>
                   </span>
                   <h4>{topicName(item.topic)}</h4>
                   <p>{item.question}</p>
@@ -180,14 +192,7 @@ export function Evidence({
             {!visible.length && (
               <p className="empty-state">
                 No appraisals match this combination.{' '}
-                <button
-                  onClick={() => {
-                    setGrade('all');
-                    setFocus('all');
-                  }}
-                >
-                  Clear filters
-                </button>
+                <button onClick={clearFilters}>Clear filters</button>
               </p>
             )}
             <p className="source-note">
@@ -233,9 +238,14 @@ export function Evidence({
         </div>
         {selected && (
           <>
-            <span className="grade">
-              Grade {selected.grade} · {selected.direction.replaceAll('-', ' ')}
-            </span>
+            <div className="evidence-topline">
+              <span className={`grade grade-${selected.grade}`}>
+                Grade {selected.grade}
+              </span>
+              <span className="evidence-direction">
+                {appraisalDirection(selected.direction)}
+              </span>
+            </div>
             <h2 id="appraisal-title">{topicName(selected.topic)}</h2>
             <p className="drawer-question">{selected.question}</p>
             <dl className="appraisal-fields">
