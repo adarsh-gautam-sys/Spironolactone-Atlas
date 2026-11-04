@@ -22,7 +22,7 @@ export function DataTable({
         role="region"
         aria-label="Chart data"
       >
-        <table>
+        <table className="data-table">
           <caption className="sr-only">Underlying chart values</caption>
           <thead>
             <tr>

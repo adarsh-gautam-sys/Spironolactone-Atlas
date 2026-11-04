@@ -1,0 +1,119 @@
+{
+  "assessment": "B: isolated mechanical type scan",
+  "phase": "before",
+  "command": "node C:/Users/conta.LAPTOP-IR41J1UC/.agents/skills/impeccable/scripts/detect.mjs --json --scope type src",
+  "cwd": "C:\\Users\\conta.LAPTOP-IR41J1UC\\Desktop\\Spironolactone Atlas",
+  "startedUtc": "2026-11-04T10:44:12.9563698Z",
+  "finishedUtc": "2026-11-04T10:44:13.2144879Z",
+  "status": "completed-findings",
+  "exitCode": 2,
+  "detectorStderr": "",
+  "totalFindings": 98,
+  "severityCounts": [
+    {
+      "severity": "advisory",
+      "count": 98
+    }
+  ],
+  "advisoryBooleanTrueCount": 0,
+  "rules": [
+    {
+      "rule": "design-system-font-size",
+      "count": 98,
+      "severityValues": ["advisory"],
+      "files": [
+        {
+          "file": "src/index.css",
+          "lines": [
+            109, 124, 159, 180, 226, 230, 250, 255, 268, 286, 295, 308, 315,
+            320, 363, 366, 380, 383, 386, 392, 399, 402, 419, 425, 430, 436,
+            465, 468, 471, 488, 494, 499, 510, 513, 522, 568, 587, 602, 614,
+            639, 665, 703, 743, 760, 781, 863, 871, 884, 889, 919, 932, 936,
+            943, 954, 959, 1004, 1023, 1066, 1081, 1138, 1148, 1202, 1233, 1250,
+            1253, 1295, 1317, 1320, 1336, 1376, 1403, 1418, 1422, 1448, 1457,
+            1476, 1521, 1525, 1536, 1539, 1549, 1566, 1577, 1588, 1594, 1597,
+            1613, 1624, 1633, 1643, 1654, 1674, 1684, 1690, 1693, 1731, 1747,
+            1759
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceExtent": {
+    "target": "src",
+    "allFileCount": 34,
+    "eligibleSourceFileCount": 27,
+    "eligibleSourceFiles": [
+      "src/App.tsx",
+      "src/components/charts/Bars.tsx",
+      "src/components/charts/ChartBlock.tsx",
+      "src/components/charts/LinePlot.tsx",
+      "src/components/ui/BlurText.tsx",
+      "src/components/ui/ChapterIndex.tsx",
+      "src/components/ui/CountUp.tsx",
+      "src/components/ui/Navigation.tsx",
+      "src/components/ui/SectionBoundary.tsx",
+      "src/components/ui/SourceNote.tsx",
+      "src/data/site-types.ts",
+      "src/data/types.ts",
+      "src/hooks/useJson.ts",
+      "src/index.css",
+      "src/lib/chapters.ts",
+      "src/lib/format.ts",
+      "src/lib/reporting.ts",
+      "src/lib/utils.ts",
+      "src/main.tsx",
+      "src/sections/AtlasSections.tsx",
+      "src/sections/Evidence.tsx",
+      "src/sections/Interactions.tsx",
+      "src/sections/Mechanism.tsx",
+      "src/sections/Methods.tsx",
+      "src/sections/ReadingGuide.tsx",
+      "src/sections/Reporting.tsx",
+      "src/sections/Research.tsx"
+    ],
+    "unsupportedExtensionFiles": [
+      "src/components/charts/README.md",
+      "src/components/ui/REACT_BITS_LICENSE.txt",
+      "src/components/ui/README.md",
+      "src/data/README.md",
+      "src/hooks/README.md",
+      "src/lib/README.md",
+      "src/sections/README.md"
+    ],
+    "ignoredSourceFiles": [],
+    "ignoredSourceDirectories": [],
+    "projectDetectorIgnoreSettings": "None: .impeccable/config.json contains only buildPath; config.local.json absent; no inline impeccable-disable comments found in src.",
+    "method": "Enumerated src with Force; matched detector SCANNABLE_EXTENSIONS and walker rules; source run emits findings only and does not emit per-file completion telemetry."
+  },
+  "errors": [],
+  "anomalies": [
+    "All 98 findings have severity advisory but omit advisory:true. CLI isAdvisory requires advisory:true, which explains actual exit code 2. Preserve actual exit code; do not report a clean pass."
+  ],
+  "manualSourceCoverage": {
+    "dynamicFonts": "CSS family var values resolve to --font-display Fraunces/Georgia/serif, --font-body Inter/Arial/sans-serif, --font-mono JetBrains Mono/monospace at src/index.css:19-21. No fontSize/fontFamily/fontWeight declarations or arbitrary font expressions found in TSX/TS source search.",
+    "fluidSizes": [
+      "src/index.css:153 clamp(64px, 7.5vw, 128px)",
+      "src/index.css:221 font shorthand clamp(32px, 3.55vw, 56px)",
+      "src/index.css:363 clamp(28px, 3.35vw, 46px)",
+      "src/index.css:430 clamp(44px, 11vw, 74px)",
+      "src/index.css:465 clamp(23px, 6.2vw, 40px)",
+      "src/index.css:563 clamp(42px, 4.4vw, 68px)",
+      "src/index.css:1233 clamp(36px, 3.5vw, 52px)"
+    ],
+    "fontShorthandLines": [
+      57, 141, 221, 802, 845, 1010, 1041, 1088, 1102, 1105, 1129, 1161, 1340
+    ],
+    "svgCaveat": "src/components/charts/LinePlot.tsx:41 constructs viewBox from measured width and height 230; labels are SVG text at lines 54 and 68, with src/index.css:1041 font:11px var(--font-mono). Their effective rendered size depends on SVG viewport mapping; no browser measurements performed."
+  },
+  "limitations": [
+    "Static source scan only; no browser/computed style, real cascade, inheritance, loading, fallback metrics, zoom, contrast, or responsive text fit verification.",
+    "Dynamic CSS values, variable resolution, CSS expressions, runtime class composition, and font shorthand coverage are incomplete; the absence of findings is not evidence of typography quality.",
+    "Off-ramp findings compare source literals with detector interpretation of DESIGN.md; intentional role sizes and responsive/SVG units require assessment A synthesis.",
+    "The font shorthand values noted above are not represented in the 98 returned findings; no source files were excluded to silence findings.",
+    "No broad scan, second initial scan, source edits, UI/doc edits, or browser work performed."
+  ],
+  "rawPath": ".impeccable/review/typeset/b-type-before-raw.json",
+  "stderrPath": ".impeccable/review/typeset/b-type-before-stderr.txt",
+  "runMetadataPath": ".impeccable/review/typeset/b-type-before-run.json"
+}

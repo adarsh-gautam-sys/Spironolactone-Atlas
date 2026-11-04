@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-04T10:34:35.055Z",
+  "generatedAt": "2026-11-04T11:12:35.482Z",
   "title": "Design System: Spironolactone Atlas",
   "extensions": {
     "colorMeta": {
@@ -187,12 +187,32 @@
         "purpose": "Third-level editorial headings; chart and evidence titles have nearby local sizes."
       },
       "body": {
-        "displayName": "Body",
-        "purpose": "Dense explanations and chart takeaways; introductions use larger Inter."
+        "displayName": "Reading text",
+        "purpose": "Ordinary explanations use 1rem / 1.7, capped at 68ch where the container permits."
       },
       "label": {
         "displayName": "Label",
         "purpose": "Compact monospaced grade classifications."
+      },
+      "metadata": {
+        "displayName": "Source metadata",
+        "purpose": "Source names, dates and provenance in a deliberate compact role."
+      },
+      "data": {
+        "displayName": "Numeric table values",
+        "purpose": "Right-aligned lining/tabular Mono values; narrative cells retain their own alignment."
+      },
+      "compact": {
+        "displayName": "Compact controls and citations",
+        "purpose": "Short links and citation detail, not extended explanations."
+      },
+      "qualifier": {
+        "displayName": "Evidence direction",
+        "purpose": "The preserved qualification beneath each grade."
+      },
+      "chart-title": {
+        "displayName": "Chart title",
+        "purpose": "The desktop chart heading role; the documented mobile variant is 26px."
       }
     },
     "shadows": [],
@@ -229,6 +249,10 @@
       }
     ],
     "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "359px"
+      },
       {
         "name": "mobile-max",
         "value": "760px"
@@ -289,7 +313,7 @@
       "refersTo": "evidence-item",
       "description": "An actual Acne appraisal entry: open reading block, top rule, grade, question and trailing action.",
       "html": "<button class=\"ds-evidence\" type=\"button\"><span class=\"ds-evidence-topline\"><span class=\"ds-evidence-grade\">Grade B</span><span class=\"ds-evidence-direction\">Benefit</span></span><h4>Acne</h4><p>Patient-reported acne improvement in adult women, alongside permitted topical treatment</p><span class=\"ds-evidence-action\">Read appraisal <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></button>",
-      "css": ".ds-evidence{background:none;color:var(--color-foreground);font-family:var(--font-body);text-align:left;border:0;border-top:1px solid #626b7c;padding:26px 0 30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px;transition:color .2s;cursor:pointer}.ds-evidence:hover h4{color:var(--color-positive)}.ds-evidence:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-evidence h4{font:600 30px/1.15 var(--font-display);margin:0}.ds-evidence p{font:400 14px/1.7 var(--font-body);color:var(--color-muted);margin:0}.ds-evidence-topline{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.ds-evidence-direction{color:var(--color-foreground);font-size:15px;font-weight:500;line-height:1.55}.ds-evidence-grade{font:400 12px/1.4 var(--font-mono);border:1px solid var(--color-foreground);padding:5px 8px;display:inline-block;border-radius:3px}.ds-evidence-action{display:inline-flex;align-items:center;gap:8px;font-size:13px;margin-top:auto;padding-top:8px}@media(max-width:760px){.ds-evidence{padding-block:23px}.ds-evidence h4{font-size:29px}}@media(prefers-reduced-motion:reduce){.ds-evidence{transition-duration:.01ms}}"
+      "css": ".ds-evidence{background:none;color:var(--color-foreground);font-family:var(--font-body);text-align:left;border:0;border-top:1px solid #626b7c;padding:26px 0 30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px;transition:color .2s;cursor:pointer}.ds-evidence:hover h4{color:var(--color-positive)}.ds-evidence:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-evidence h4{font:600 30px/1.15 var(--font-display);margin:0}.ds-evidence p{font:400 var(--text-body,1rem)/var(--leading-body,1.7) var(--font-body);color:var(--color-muted);margin:0}.ds-evidence-topline{display:flex;flex-direction:column;align-items:flex-start;gap:8px}.ds-evidence-direction{color:var(--color-foreground);font-size:15px;font-weight:500;line-height:1.55}.ds-evidence-grade{font:400 12px/1.4 var(--font-mono);border:1px solid var(--color-foreground);padding:5px 8px;display:inline-block;border-radius:3px}.ds-evidence-action{display:inline-flex;align-items:center;gap:8px;font-size:13px;margin-top:auto;padding-top:8px}@media(max-width:760px){.ds-evidence{padding-block:23px}.ds-evidence h4{font-size:29px}}@media(prefers-reduced-motion:reduce){.ds-evidence{transition-duration:.01ms}}"
     },
     {
       "name": "Product Segments",
@@ -304,7 +328,7 @@
       "kind": "custom",
       "description": "The recurring native disclosure for underlying chart values.",
       "html": "<details class=\"ds-data-details\"><summary>View data</summary><div class=\"ds-table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Chart data\"><table class=\"ds-data-table\"><caption class=\"ds-sr-only\">Underlying chart values</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Reports</th></tr></thead><tbody><tr><th scope=\"row\">Hyperkalaemia</th><td>3,452</td></tr><tr><th scope=\"row\">Acute kidney injury</th><td>3,133</td></tr><tr><th scope=\"row\">Hypotension</th><td>1,832</td></tr></tbody></table></div><a class=\"ds-data-link\" href=\"data/adverse-reactions.csv\" download>Download source CSV</a></details>",
-      "css": ".ds-data-details{margin-top:18px;font:400 13px/1.55 var(--font-body);color:var(--color-foreground)}.ds-data-details summary{cursor:pointer;min-height:44px;display:list-item;padding-block:10px;font-weight:500}.ds-data-details summary::marker{color:var(--color-positive)}.ds-data-link{display:inline-flex;align-items:center;gap:8px;color:var(--color-foreground);font-size:14px;min-height:44px;text-underline-offset:4px}.ds-data-link:hover{text-decoration-color:var(--color-accent)}.ds-data-details summary:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-data-link:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-table-scroll{overflow:auto;max-height:430px;margin-block:14px;scrollbar-width:thin}.ds-data-table{border-collapse:collapse;width:100%;text-align:left;font-size:13px}.ds-data-table th,.ds-data-table td{padding:14px 12px;border-bottom:1px solid #3e4657;vertical-align:top}.ds-data-table thead th{font-weight:500;background:var(--color-surface);position:sticky;top:0;z-index:1}.ds-data-table tbody th{font-weight:400}.ds-data-table td{color:var(--color-muted)}.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.ds-table-scroll:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}"
+      "css": ".ds-data-details{margin-top:18px;font:400 13px/1.55 var(--font-body);color:var(--color-foreground)}.ds-data-details summary{cursor:pointer;min-height:44px;display:list-item;padding-block:10px;font-weight:500}.ds-data-details summary::marker{color:var(--color-positive)}.ds-data-link{display:inline-flex;align-items:center;gap:8px;color:var(--color-foreground);font-size:14px;min-height:44px;text-underline-offset:4px}.ds-data-link:hover{text-decoration-color:var(--color-accent)}.ds-data-details summary:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-data-link:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-table-scroll{overflow:auto;max-height:430px;margin-block:14px;scrollbar-width:thin}.ds-data-table{border-collapse:collapse;width:100%;text-align:left;font-size:13px}.ds-data-table th,.ds-data-table td{padding:14px 12px;border-bottom:1px solid #3e4657;vertical-align:top}.ds-data-table thead th{font-weight:500;background:var(--color-surface);position:sticky;top:0;z-index:1}.ds-data-table tbody th{font-weight:400}.ds-data-table td{color:var(--color-muted);text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}.ds-data-table thead th:last-child{text-align:right}.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.ds-table-scroll:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}"
     },
     {
       "name": "Source Note",

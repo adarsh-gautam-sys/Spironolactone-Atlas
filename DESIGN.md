@@ -35,7 +35,7 @@ typography:
     letterSpacing: '-0.02em'
   body:
     fontFamily: 'Inter, Arial, sans-serif'
-    fontSize: '15px'
+    fontSize: '1rem'
     fontWeight: 400
     lineHeight: 1.7
   label:
@@ -43,6 +43,32 @@ typography:
     fontSize: '12px'
     fontWeight: 400
     lineHeight: 1.4
+  metadata:
+    fontFamily: 'Inter, Arial, sans-serif'
+    fontSize: '12px'
+    fontWeight: 400
+    lineHeight: 1.75
+  data:
+    fontFamily: 'JetBrains Mono, monospace'
+    fontSize: '13px'
+    fontWeight: 400
+    lineHeight: 1.55
+  compact:
+    fontFamily: 'Inter, Arial, sans-serif'
+    fontSize: '14px'
+    fontWeight: 400
+    lineHeight: 1.55
+  qualifier:
+    fontFamily: 'Inter, Arial, sans-serif'
+    fontSize: '15px'
+    fontWeight: 500
+    lineHeight: 1.55
+  chart-title:
+    fontFamily: 'Fraunces, Georgia, serif'
+    fontSize: '28px'
+    fontWeight: 600
+    lineHeight: 1.25
+    letterSpacing: '-0.02em'
 rounded:
   sm: '4px'
   md: '6px'
@@ -145,8 +171,14 @@ The palette pairs warm neutral paper with ink, reserving brighter coral and teal
 - **Display:** the frontmatter's fluid title role; tight tracking and a broad desktop line. Below the mobile breakpoint it becomes `clamp(44px, 11vw, 74px)` with line height (1.04) and natural wrapping.
 - **Headline:** section introductions use the fluid headline role; mobile section headings use (41px). Headings balance their line breaks.
 - **Title:** the common third-level heading role. Chart headings are (28px), becoming (26px) on mobile; evidence titles are (30px), becoming (29px).
-- **Body:** the frontmatter records the recurring dense explanation role. Section introductions are larger (21px / 1.65), becoming (17px / 1.7) on mobile. Explanatory measures commonly stop at (64–70ch).
+- **Body:** ordinary explanations use the shared `--text-body` role, equal to (16px) at the browser default, with `--leading-body` (1.7). This includes chart takeaways, appraisal fields, evidence summaries, methods, mechanism explanations and the short read. Wide prose uses `--measure-prose` (68ch); narrower columns reflow naturally. Section introductions remain larger (21px / 1.65), using (18px) on tablet and (17px / 1.7) on mobile.
 - **Label:** compact grade badges use the monospaced label role; source notes use Inter (12px / 1.75) on desktop and mobile. Numerical chart labels use monospaced tabular figures.
+
+**Compact roles:** metadata uses the frontmatter's Inter metadata role, numeric table cells use its Mono data role, links and citation detail use the compact role, and evidence direction uses the qualifier role. Chart ticks and mechanism step captions use (12px). Mobile bar counts retain (11px) Mono in their (42px) value column, with larger underlying-table access; exact query code also remains (11px) with wrapping. Compact data and metadata are intentional exceptions to the ordinary reading size.
+
+Existing local variants retain their jobs: product-label entries use (17px) on desktop and (16px) on mobile; the appraisal question uses (19px / 1.65), becoming (17px) on mobile. The original actions and display composition retain their approved responsive sizes rather than being forced onto the reading scale.
+
+Fontsource supplies only the established four Latin faces and weights, with `font-display: swap` and Georgia/Arial/monospace fallbacks. Fraunces weight (600) is explicit for the wordmark, evidence titles and medicine name. Do not add font files, preloads or invented fallback metrics without loading evidence.
 
 **The Three Voices Rule.** Use Fraunces for editorial headings, Inter for explanations and controls, and JetBrains Mono for values and compact classifications.
 
@@ -161,6 +193,8 @@ Section headings, the mechanism and methods use two equal columns, usually with 
 The spacing entries describe recurring measured intervals rather than a universal mathematical scale. Narrative sections use padding (110px 0 30px), changing to (65px 0 10px) on mobile. Chart blocks use vertical padding (28px), changing to (24px). Dense components retain their own smaller intervals.
 
 The opening page's centered introduction, paired actions, four outlined statistics and split commentary/chart are governed by `.impeccable/surfaces/src-app-tsx.md` and the original attachment. Statistics reflow to two columns on mobile. Preserve that approved composition without imposing it on every section.
+
+Below (360px), the header gap and display sizes tighten to fit a (320px) viewport: the wordmark uses (19px), the hero title uses `clamp(34px, 12vw, 44px)`, section headings use (36px), and statistics use `clamp(18px, 5.6vw, 20px)`. This narrow adaptation preserves whole medicine names and numbers; sizes at (360px) and above retain their established composition. Reading text stays at the ordinary body role.
 
 ## Elevation & Depth
 
@@ -209,6 +243,8 @@ Adjacent outlined buttons use ink/paper inversion for the pressed state, with `a
 ### Charts and Source Notes
 
 Bar rows align a text label, flat rectangular fill and monospaced number. Coral is first and teal follows; quantity is also explicit in text. Chart blocks begin with a rule, serif heading and muted takeaway, then end with a quiet source note and native View data disclosure. Data tables use fine row rules and paper-colored sticky headings inside a bounded scrolling region. Preserve these text and table companions when reusing a chart.
+
+Underlying data tables right-align their numeric column with lining, tabular Mono numerals; their category labels remain left-aligned. Narrative interaction cells keep their reading alignment. Line plots use (12px) Mono ticks, a (56px) left inset and (34px) bottom inset; the SVG viewBox follows the container so labels remain readable on narrow screens.
 
 Wide interaction tables retain their focusable scrolling region and add a small mobile cue for off-screen columns. Text selection uses coral behind ink so selected content stays readable.
 

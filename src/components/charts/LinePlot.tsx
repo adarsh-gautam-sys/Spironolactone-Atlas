@@ -16,14 +16,14 @@ export function LinePlot({
     if (!ref.current) return;
     const observer = new ResizeObserver((entries) => {
       const size = entries[0]?.contentRect.width;
-      if (size) setWidth(Math.max(280, Math.round(size)));
+      if (size) setWidth(Math.max(240, Math.round(size)));
     });
     observer.observe(ref.current);
     return () => observer.disconnect();
   }, []);
   const height = 230,
-    left = 48,
-    bottom = 32,
+    left = 56,
+    bottom = 34,
     top = 15;
   const maximum = Math.max(1, ...rows.map((row) => row.value));
   const x = (index: number) =>

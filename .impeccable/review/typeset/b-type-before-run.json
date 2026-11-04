@@ -1,0 +1,10 @@
+{
+  "command": "node C:/Users/conta.LAPTOP-IR41J1UC/.agents/skills/impeccable/scripts/detect.mjs --json --scope type src",
+  "cwd": "C:\\Users\\conta.LAPTOP-IR41J1UC\\Desktop\\Spironolactone Atlas",
+  "startedUtc": "2026-11-04T10:44:12.9563698Z",
+  "finishedUtc": "2026-11-04T10:44:13.2144879Z",
+  "exitCode": 2,
+  "stdoutPath": ".impeccable/review/typeset/b-type-before-raw.json",
+  "stderrPath": ".impeccable/review/typeset/b-type-before-stderr.txt",
+  "stderr": ""
+}
