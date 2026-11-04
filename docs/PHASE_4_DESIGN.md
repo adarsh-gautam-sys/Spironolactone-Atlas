@@ -1,5 +1,7 @@
 # Phase 4 — approved design handoff
 
+> Historical handoff. On 4 November 2026 the user explicitly selected the original light attachment at `.impeccable/mocks/composition/02-user-original.png`, overriding the dark palette below and the PRD's visual direction. The current implementation and system are recorded in `PHASE_5_FRONTEND.md` and root `DESIGN.md`.
+
 The shape brief and **Clinical Editorial** composition are approved. The composition-board answer selected `clinical-editorial`, with no revision note and the comp-first workflow retained. This completes the planning phase. Phase 5 frontend implementation has not started.
 
 Approved image: `../.impeccable/mocks/composition/01-clinical-editorial.png`, 1487 × 1058. Its PNG is byte-identical to the previously selected decision image; it was not regenerated. Its JSON sidecar records approval. Options 2 and 3 remain unapproved alternatives.

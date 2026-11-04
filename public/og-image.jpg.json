@@ -1,0 +1,9 @@
+{
+  "origin": "Original project HTML/CSS rendered by the browser from .impeccable/share-card.html; all quantities read from atlas-overview.json.",
+  "source": ".impeccable/share-card.html",
+  "sourceScript": "scripts/prepare-share-card.mjs",
+  "captureViewport": { "width": 1200, "height": 630 },
+  "rasterDimensions": { "width": 1199, "height": 630 },
+  "format": "image/jpeg",
+  "note": "Native browser export dimensions; no image resampling or synthetic medical imagery."
+}

@@ -21,3 +21,4 @@ Thumbs.db
 .impeccable/questions/
 .impeccable/references/
 .impeccable/config.local.json
+.impeccable/vendor/

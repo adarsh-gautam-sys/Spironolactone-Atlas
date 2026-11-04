@@ -1,8 +1,8 @@
 # Project conventions
 
-- Follow `docs/PHASES.md`. Phase 4 design is complete and the Clinical Editorial composition is approved. Phase 5 frontend implementation is next; use the approved comp and `docs/PHASE_4_DESIGN.md` as the handoff.
+- Follow `docs/PHASES.md`. The user's original light mockup at `.impeccable/mocks/composition/02-user-original.png` overrides the PRD's visual direction and the earlier dark comp. Extend the implemented system recorded in `DESIGN.md`.
 - Use npm, Vite, React and TypeScript strict mode. Import project files through `@/` where useful.
-- Use Tailwind CSS v4 through its Vite plugin. Keep design-token placeholders in `src/index.css`; do not choose values during setup.
+- Use Tailwind CSS v4 through its Vite plugin. Keep shared visual tokens in `src/index.css` and document durable changes in `DESIGN.md`.
 - Import Motion from `motion/react`, never `framer-motion`.
 - Honour `prefers-reduced-motion` for every animation, including smooth scrolling and React Bits effects. Supply a static fallback.
 - Use at most 6 React Bits components across the finished site. Review dependencies and bundle cost before adding each. Lazy-load heavy effects.

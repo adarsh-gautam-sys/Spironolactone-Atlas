@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-03T23:38:44.023Z",
+  "title": "Design System: Spironolactone Atlas",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0119 79.78)",
+          "oklch(26.4% 0.0119 79.78)",
+          "oklch(37.9% 0.0119 79.78)",
+          "oklch(49.3% 0.0119 79.78)",
+          "oklch(60.7% 0.0119 79.78)",
+          "oklch(72.1% 0.0119 79.78)",
+          "oklch(83.6% 0.0119 79.78)",
+          "oklch(95% 0.0119 79.78)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Warm Paper Surface",
+        "tonalRamp": [
+          "oklch(15% 0.0119 79.78)",
+          "oklch(26.4% 0.0119 79.78)",
+          "oklch(37.9% 0.0119 79.78)",
+          "oklch(49.3% 0.0119 79.78)",
+          "oklch(60.7% 0.0119 79.78)",
+          "oklch(72.1% 0.0119 79.78)",
+          "oklch(83.6% 0.0119 79.78)",
+          "oklch(95% 0.0119 79.78)"
+        ]
+      },
+      "foreground": {
+        "role": "primary",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0341 269.56)",
+          "oklch(26.4% 0.0341 269.56)",
+          "oklch(37.9% 0.0341 269.56)",
+          "oklch(49.3% 0.0341 269.56)",
+          "oklch(60.7% 0.0341 269.56)",
+          "oklch(72.1% 0.0341 269.56)",
+          "oklch(83.6% 0.0341 269.56)",
+          "oklch(95% 0.0341 269.56)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0193 266.09)",
+          "oklch(26.4% 0.0193 266.09)",
+          "oklch(37.9% 0.0193 266.09)",
+          "oklch(49.3% 0.0193 266.09)",
+          "oklch(60.7% 0.0193 266.09)",
+          "oklch(72.1% 0.0193 266.09)",
+          "oklch(83.6% 0.0193 266.09)",
+          "oklch(95% 0.0193 266.09)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Coral",
+        "tonalRamp": [
+          "oklch(15% 0.1320 33.95)",
+          "oklch(26.4% 0.1320 33.95)",
+          "oklch(37.9% 0.1320 33.95)",
+          "oklch(49.3% 0.1320 33.95)",
+          "oklch(60.7% 0.1320 33.95)",
+          "oklch(72.1% 0.1320 33.95)",
+          "oklch(83.6% 0.1320 33.95)",
+          "oklch(95% 0.1320 33.95)"
+        ]
+      },
+      "accent-ink": {
+        "role": "primary",
+        "displayName": "Dark Coral",
+        "tonalRamp": [
+          "oklch(15% 0.1228 32.53)",
+          "oklch(26.4% 0.1228 32.53)",
+          "oklch(37.9% 0.1228 32.53)",
+          "oklch(49.3% 0.1228 32.53)",
+          "oklch(60.7% 0.1228 32.53)",
+          "oklch(72.1% 0.1228 32.53)",
+          "oklch(83.6% 0.1228 32.53)",
+          "oklch(95% 0.1228 32.53)"
+        ]
+      },
+      "chart-teal": {
+        "role": "secondary",
+        "displayName": "Chart Teal",
+        "tonalRamp": [
+          "oklch(15% 0.0792 187.17)",
+          "oklch(26.4% 0.0792 187.17)",
+          "oklch(37.9% 0.0792 187.17)",
+          "oklch(49.3% 0.0792 187.17)",
+          "oklch(60.7% 0.0792 187.17)",
+          "oklch(72.1% 0.0792 187.17)",
+          "oklch(83.6% 0.0792 187.17)",
+          "oklch(95% 0.0792 187.17)"
+        ]
+      },
+      "positive": {
+        "role": "secondary",
+        "displayName": "Deep Teal",
+        "tonalRamp": [
+          "oklch(15% 0.0708 186.08)",
+          "oklch(26.4% 0.0708 186.08)",
+          "oklch(37.9% 0.0708 186.08)",
+          "oklch(49.3% 0.0708 186.08)",
+          "oklch(60.7% 0.0708 186.08)",
+          "oklch(72.1% 0.0708 186.08)",
+          "oklch(83.6% 0.0708 186.08)",
+          "oklch(95% 0.0708 186.08)"
+        ]
+      },
+      "positive-surface": {
+        "role": "secondary",
+        "displayName": "Pale Teal Paper",
+        "tonalRamp": [
+          "oklch(15% 0.0144 148.77)",
+          "oklch(26.4% 0.0144 148.77)",
+          "oklch(37.9% 0.0144 148.77)",
+          "oklch(49.3% 0.0144 148.77)",
+          "oklch(60.7% 0.0144 148.77)",
+          "oklch(72.1% 0.0144 148.77)",
+          "oklch(83.6% 0.0144 148.77)",
+          "oklch(95% 0.0144 148.77)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "tonalRamp": [
+          "oklch(15% 0.0290 263.20)",
+          "oklch(26.4% 0.0290 263.20)",
+          "oklch(37.9% 0.0290 263.20)",
+          "oklch(49.3% 0.0290 263.20)",
+          "oklch(60.7% 0.0290 263.20)",
+          "oklch(72.1% 0.0290 263.20)",
+          "oklch(83.6% 0.0290 263.20)",
+          "oklch(95% 0.0290 263.20)"
+        ]
+      },
+      "outline": {
+        "role": "neutral",
+        "displayName": "Outline",
+        "tonalRamp": [
+          "oklch(15% 0.0252 254.48)",
+          "oklch(26.4% 0.0252 254.48)",
+          "oklch(37.9% 0.0252 254.48)",
+          "oklch(49.3% 0.0252 254.48)",
+          "oklch(60.7% 0.0252 254.48)",
+          "oklch(72.1% 0.0252 254.48)",
+          "oklch(83.6% 0.0252 254.48)",
+          "oklch(95% 0.0252 254.48)"
+        ]
+      },
+      "table-rule": {
+        "role": "neutral",
+        "displayName": "Table Rule",
+        "tonalRamp": [
+          "oklch(15% 0.0308 265.21)",
+          "oklch(26.4% 0.0308 265.21)",
+          "oklch(37.9% 0.0308 265.21)",
+          "oklch(49.3% 0.0308 265.21)",
+          "oklch(60.7% 0.0308 265.21)",
+          "oklch(72.1% 0.0308 265.21)",
+          "oklch(83.6% 0.0308 265.21)",
+          "oklch(95% 0.0308 265.21)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The introductory atlas title; mobile wraps and reduces the fluid size."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section introductions in the editorial reading splits."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Third-level editorial headings; chart and evidence titles have nearby local sizes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Dense explanations and chart takeaways; introductions use larger Inter."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact monospaced grade classifications."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "control-color",
+        "value": "0.2s",
+        "purpose": "Button background/text and evidence-entry color transitions."
+      },
+      {
+        "name": "chart-and-mechanism-state",
+        "value": "0.35s",
+        "purpose": "Bar widths and mechanism state changes; zero duration under reduced motion."
+      },
+      {
+        "name": "chart-count-ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Bar width changes and the single introductory CountUp."
+      },
+      {
+        "name": "intro-count",
+        "value": "0.6s",
+        "purpose": "The one introductory cohort counter."
+      },
+      {
+        "name": "intro-word-reveal",
+        "value": "0.4s",
+        "purpose": "Short introductory BlurText reveal, with 0.04s word stagger."
+      },
+      {
+        "name": "reduced-motion-css",
+        "value": "0.01ms",
+        "purpose": "Global animation/transition duration override; component logic also renders static reduced-motion content."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "tablet-max",
+        "value": "1100px"
+      },
+      {
+        "name": "statistics-intermediate-max",
+        "value": "1350px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The introductory story action, with the shipped hover and focus treatment.",
+      "html": "<a class=\"ds-button ds-primary\" href=\"#story\">Read the story <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-button{display:inline-flex;gap:16px;align-items:center;justify-content:center;min-height:64px;padding:9px 40px;border:1.5px solid var(--color-foreground);border-radius:var(--radius-md);text-decoration:none;font:500 25px/1.55 var(--font-body);background:transparent;color:var(--color-foreground);transition:background .2s,color .2s}.ds-button:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-button{min-height:50px;font-size:15px;padding:10px 19px;gap:9px}.ds-button svg{width:18px}}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}.ds-primary{background:var(--color-foreground);color:var(--color-background)}.ds-primary:hover{background:var(--color-positive);border-color:var(--color-positive);color:var(--color-background)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The paired transparent exploration action.",
+      "html": "<a class=\"ds-button ds-outline\" href=\"#reporting\">Explore data</a>",
+      "css": ".ds-button{display:inline-flex;gap:16px;align-items:center;justify-content:center;min-height:64px;padding:9px 40px;border:1.5px solid var(--color-foreground);border-radius:var(--radius-md);text-decoration:none;font:500 25px/1.55 var(--font-body);background:transparent;color:var(--color-foreground);transition:background .2s,color .2s}.ds-button:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-button{min-height:50px;font-size:15px;padding:10px 19px;gap:9px}.ds-button svg{width:18px}}@media(prefers-reduced-motion:reduce){.ds-button{transition-duration:.01ms}}.ds-outline:hover{background:var(--color-foreground);color:var(--color-background)}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "The label-derived interaction search with a visible label and stroked magnifier.",
+      "html": "<label class=\"ds-filter-label\">Search drug or effect<span class=\"ds-search\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.3-4.3\"/></svg><input type=\"search\" placeholder=\"e.g. lithium or potassium\" /></span></label>",
+      "css": ".ds-filter-label{display:flex;flex-direction:column;gap:9px;font:400 13px/1.55 var(--font-body);color:var(--color-foreground);min-width:190px}.ds-search{display:flex;align-items:center;position:relative}.ds-search svg{position:absolute;left:12px;pointer-events:none;color:var(--color-muted)}.ds-search input{font:inherit;width:320px;max-width:100%;min-height:46px;padding:11px 35px 11px 40px;border:1px solid #657082;border-radius:var(--radius-sm);background:var(--color-surface);color:var(--color-foreground);caret-color:var(--color-accent)}.ds-search input::placeholder{color:var(--color-muted)}.ds-search input:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-filter-label{font-size:12px;min-width:min(100%,145px)}.ds-search,.ds-search input{width:100%}}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "description": "The shipped wordmark and section links; desktop is replaced by a native chapter disclosure on mobile.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#top\">Spironolactone Atlas</a><nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#story\" aria-current=\"location\">The story</a><a href=\"#reporting\">Reporting data</a><a href=\"#evidence\">Evidence</a><a href=\"#methods\">Methods</a><a href=\"#sources\">Sources <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></nav></header>",
+      "css": ".ds-header{display:flex;align-items:center;justify-content:space-between;gap:32px;height:80px;border-bottom:1px solid var(--color-foreground);background:var(--color-background);color:var(--color-foreground)}.ds-wordmark{font:600 36px/1.1 var(--font-display);letter-spacing:-.04em;text-decoration:none;white-space:nowrap;color:inherit}.ds-nav{display:flex;align-items:center;gap:36px}.ds-nav a{display:inline-flex;align-items:center;gap:4px;font:400 19px/1.55 var(--font-body);text-decoration:none;padding-block:10px;border-bottom:2px solid transparent;color:inherit}.ds-nav a:hover,.ds-nav a[aria-current]{border-bottom-color:var(--color-positive)}.ds-nav a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-wordmark:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:1100px){.ds-nav{gap:20px}.ds-nav a{font-size:15px}.ds-wordmark{font-size:26px}}@media(max-width:760px){.ds-nav{display:none}.ds-header{height:76px;gap:12px}.ds-wordmark{font-size:22px}}"
+    },
+    {
+      "name": "Evidence Grade",
+      "kind": "chip",
+      "refersTo": "grade",
+      "description": "A descriptive project grade paired with direction text, as shown on an appraisal entry.",
+      "html": "<span class=\"ds-topline\"><span class=\"ds-grade ds-grade-b\">Grade B</span><span>Benefit</span></span>",
+      "css": ".ds-topline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font:400 11px/1.55 var(--font-body);color:var(--color-foreground)}.ds-topline>span+span{color:var(--color-muted);text-transform:capitalize}.ds-grade{font:400 12px/1.4 var(--font-mono);border:1px solid #727d8b;padding:5px 8px;display:inline-block;border-radius:3px}.ds-grade-b{border-color:var(--color-foreground)}"
+    },
+    {
+      "name": "Evidence Entry",
+      "kind": "card",
+      "refersTo": "evidence-item",
+      "description": "An actual Acne appraisal entry: open reading block, top rule, grade, question and trailing action.",
+      "html": "<button class=\"ds-evidence\" type=\"button\"><span class=\"ds-evidence-topline\"><span class=\"ds-evidence-grade\">Grade B</span><span>benefit</span></span><h4>Acne</h4><p>Patient-reported acne improvement in adult women, alongside permitted topical treatment</p><span class=\"ds-evidence-action\">Read appraisal <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></span></button>",
+      "css": ".ds-evidence{background:none;color:var(--color-foreground);font-family:var(--font-body);text-align:left;border:0;border-top:1px solid #626b7c;padding:26px 0 30px;display:flex;flex-direction:column;align-items:flex-start;gap:15px;transition:color .2s;cursor:pointer}.ds-evidence:hover h4{color:var(--color-positive)}.ds-evidence:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-evidence h4{font:600 30px/1.15 var(--font-display);margin:0}.ds-evidence p{font:400 14px/1.7 var(--font-body);color:var(--color-muted);margin:0}.ds-evidence-topline{display:flex;align-items:center;gap:12px;font-size:11px;flex-wrap:wrap}.ds-evidence-topline>span+span{color:var(--color-muted);text-transform:capitalize}.ds-evidence-grade{font:400 12px/1.4 var(--font-mono);border:1px solid var(--color-foreground);padding:5px 8px;display:inline-block;border-radius:3px}.ds-evidence-action{display:inline-flex;align-items:center;gap:8px;font-size:13px;margin-top:auto;padding-top:8px}@media(max-width:760px){.ds-evidence{padding-block:23px}.ds-evidence h4{font-size:29px}}@media(prefers-reduced-motion:reduce){.ds-evidence{transition-duration:.01ms}}"
+    },
+    {
+      "name": "Product Segments",
+      "kind": "button",
+      "refersTo": "segment-selected",
+      "description": "The product-reference pressed-state controls; each remains a native button.",
+      "html": "<div class=\"ds-segments\" aria-label=\"Reference product\"><button type=\"button\" aria-pressed=\"true\">US · Aldactone</button><button type=\"button\" aria-pressed=\"false\">US · Carospir</button><button type=\"button\" aria-pressed=\"false\">UK · Aldactone</button><button type=\"button\" aria-pressed=\"false\">India · source gap</button></div>",
+      "css": ".ds-segments{display:flex;gap:0;flex-wrap:wrap;margin-block:28px}.ds-segments button{font:400 16px/1.55 var(--font-body);padding:12px 20px;border:1px solid #626b7c;background:transparent;color:var(--color-foreground);margin-right:-1px;min-height:48px;cursor:pointer}.ds-segments button:first-child{border-radius:6px 0 0 6px}.ds-segments button:last-child{border-radius:0 6px 6px 0}.ds-segments button[aria-pressed=\"true\"]{background:var(--color-foreground);color:var(--color-background)}.ds-segments button:hover{border-color:var(--color-positive);position:relative}.ds-segments button:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-segments{display:grid;grid-template-columns:1fr 1fr;gap:8px}.ds-segments button{border-radius:4px!important;font-size:12px;padding:12px 8px;margin:0}}"
+    },
+    {
+      "name": "View Data Disclosure",
+      "kind": "custom",
+      "description": "The recurring native disclosure for underlying chart values.",
+      "html": "<details class=\"ds-data-details\"><summary>View data</summary><div class=\"ds-table-scroll\" tabindex=\"0\" role=\"region\" aria-label=\"Chart data\"><table class=\"ds-data-table\"><caption class=\"ds-sr-only\">Underlying chart values</caption><thead><tr><th scope=\"col\">Category</th><th scope=\"col\">Reports</th></tr></thead><tbody><tr><th scope=\"row\">Hyperkalaemia</th><td>3,452</td></tr><tr><th scope=\"row\">Acute kidney injury</th><td>3,133</td></tr><tr><th scope=\"row\">Hypotension</th><td>1,832</td></tr></tbody></table></div><a class=\"ds-data-link\" href=\"data/adverse-reactions.csv\" download>Download source CSV</a></details>",
+      "css": ".ds-data-details{margin-top:18px;font:400 13px/1.55 var(--font-body);color:var(--color-foreground)}.ds-data-details summary{cursor:pointer;min-height:44px;display:list-item;padding-block:10px;font-weight:500}.ds-data-details summary::marker{color:var(--color-positive)}.ds-data-link{display:inline-flex;align-items:center;gap:8px;color:var(--color-foreground);font-size:14px;min-height:44px;text-underline-offset:4px}.ds-data-link:hover{text-decoration-color:var(--color-accent)}.ds-data-details summary:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-data-link:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}.ds-table-scroll{overflow:auto;max-height:430px;margin-block:14px;scrollbar-width:thin}.ds-data-table{border-collapse:collapse;width:100%;text-align:left;font-size:13px}.ds-data-table th,.ds-data-table td{padding:14px 12px;border-bottom:1px solid #3e4657;vertical-align:top}.ds-data-table thead th{font-weight:500;background:var(--color-surface);position:sticky;top:0;z-index:1}.ds-data-table tbody th{font-weight:400}.ds-data-table td{color:var(--color-muted)}.ds-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.ds-table-scroll:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}"
+    },
+    {
+      "name": "Source Note",
+      "kind": "custom",
+      "description": "The quiet linked provenance line used beside charts; sample from the mechanism introduction.",
+      "html": "<p class=\"ds-source-note\"><a href=\"https://labeling.pfizer.com/showlabeling.aspx?id=520#S12.1\">Aldactone US label, §12.1</a> · Revised November 2025 · Reviewed 3 Nov 2026</p>",
+      "css": ".ds-source-note{color:var(--color-muted);font:400 12px/1.75 var(--font-body);margin:20px 0 0;max-width:100%}.ds-source-note a{color:inherit;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,var(--color-muted),transparent 45%)}.ds-source-note a:hover{text-decoration-color:var(--color-accent)}.ds-source-note a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-source-note{font-size:11px}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Clinical Editorial",
+    "overview": "Warm paper, ink lettering and fine rules make the atlas feel like a carefully arranged reading document. Fraunces gives headings their editorial character; Inter carries explanations and controls; JetBrains Mono distinguishes quantities and compact classifications. The palette and form follow the user's original light mockup, which supersedes the earlier dark direction.\n\nThe interface alternates generous introductions with denser, inspectable evidence. Color supports a chart, a selected state or a legible explanation. Navigation and exploration remain visible through ordinary links, native disclosures, outlined controls and a paper-colored appraisal drawer. These rules describe `src/index.css`, the shipped UI/chart components and narrative sections. Product and source truth remain in `PRODUCT.md` and the analytical documentation; the introduction's particular composition remains in its surface brief.",
+    "keyCharacteristics": [
+      "Paper-colored surfaces and dark editorial type.",
+      "Fine rules and restrained corners rather than floating panels.",
+      "Coral and teal data marks with explicit text labels.",
+      "Spacious headings beside explanatory copy, with compact provenance below data.",
+      "Native controls, visible focus and static reduced-motion alternatives."
+    ],
+    "rules": [
+      {
+        "name": "The Legible Accent Rule",
+        "body": "Keep bright chart fills separate from text emphasis: the mechanism uses dark coral for its medicine label and deep teal for handling labels.",
+        "section": "colors"
+      },
+      {
+        "name": "The Three Voices Rule",
+        "body": "Use Fraunces for editorial headings, Inter for explanations and controls, and JetBrains Mono for values and compact classifications.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Paper Rule",
+        "body": "Separate content with spacing and rules; reserve the modal scrim for the appraisal dialog.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve warm paper, ink lettering, coral/teal data marks and fine rules from the user-selected original.",
+      "**Do** apply the Three Voices Rule when adding headings, prose, values and controls.",
+      "**Do** keep text labels, takeaways, source notes and underlying table access attached to chart patterns.",
+      "**Do** retain visible keyboard focus, native disclosures and the mobile reading reflow.",
+      "**Do** use the Legible Accent Rule across every mechanism state and reduced-motion alternative."
+    ],
+    "donts": [
+      "**Don't** restore the superseded dark PRD direction.",
+      "**Don't** replace open evidence entries with shadowed floating cards.",
+      "**Don't** use bright coral or chart teal as the default color for small explanatory text.",
+      "**Don't** generalize the introductory eyebrow or statistic-panel composition to every section.",
+      "**Don't** add decorative motion that delays access to essential explanations or values."
+    ]
+  }
+}

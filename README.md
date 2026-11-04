@@ -1,36 +1,65 @@
 # Spironolactone Atlas
 
-A planned data-driven, animated single-page educational study of spironolactone utilisation and pharmacovigilance. The page renders “Spironolactone Atlas — setup complete” with one Tailwind utility and a reduced-motion-aware Motion fade-in. See the phase roadmap for current progress.
+An animated, single-page educational atlas of spironolactone uses, research evidence and adverse-event reporting. It includes a guided narrative, product-label comparisons, ten evidence appraisals, reporting and trial charts, subgroup filters, a searchable interaction reference and downloadable source data.
 
-See [project phases](docs/PHASES.md), [source and evidence review](docs/RESEARCH_FOUNDATION.md), [data protocol](docs/DATA_PROTOCOL.md), and [API check logs](data-pipeline/METHODOLOGY.md). Phase 1 records unresolved Indian-label and MedDRA mapping requirements; it is not a full evidence appraisal.
-
-The [Phase 2 pipeline guide](data-pipeline/PIPELINE.md) explains extraction, cache/resume, counting, validation and publication commands. JSON/CSV exports are generated from reconciled source snapshots; evidence grades and unresolved label classifications are deferred to appraisal.
+The user's original light mockup governs the visual design: warm paper, ink typography and coral/teal charts. See [frontend delivery](docs/PHASE_5_FRONTEND.md), [the design system](DESIGN.md), [project phases](docs/PHASES.md) and [content decisions](docs/CONTENT_DECISIONS.md). Quality audits and deployment remain Phase 6.
 
 ## Frontend setup
 
-Use Node.js 22.12+ and npm (setup verified with Node 22.21.0).
+Use Node.js 22.12+ and npm.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-| Script                   | Purpose                                                                             |
-| ------------------------ | ----------------------------------------------------------------------------------- |
-| `npm run dev`            | Start Vite                                                                          |
-| `npm run typecheck`      | Check application and Vite config in strict TypeScript                              |
-| `npm run lint`           | Run ESLint with zero warnings allowed                                               |
-| `npm run format`         | Format with Prettier and Tailwind class sorting                                     |
-| `npm run format:check`   | Check formatting without edits                                                      |
-| `npm run verify:imports` | Check installed library imports and font CSS entries without adding them to the app |
-| `npm run build`          | Typecheck and generate production output in dist/                                   |
-| `npm run preview`        | Serve the production build locally                                                  |
+- `npm run dev`: Vite development server.
+- `npm run prepare:data`: derive the compact frontend overview and appraisal copy from frozen exports.
+- `npm test`: verify subgroup filters, counts, denominators and source reconciliation.
+- `npm run typecheck`: strict TypeScript checks for the app and Vite config.
+- `npm run lint`: ESLint with zero warnings allowed.
+- `npm run format` / `npm run format:check`: Prettier with Tailwind class sorting.
+- `npm run verify:imports`: check installed library and font imports.
+- `npm run build`: prepare data, typecheck and produce `dist/`.
+- `npm run preview`: serve the production build locally.
 
-The `@/` alias resolves to `src/` in TypeScript and Vite. Tailwind v4 uses the official Vite plugin. Empty color, font and radius variables live in `src/index.css`; choose values during design. Fraunces, Inter and JetBrains Mono are installed but not loaded. Three.js and d3-sankey are deferred until needed.
+The `@/` alias resolves to `src/` in TypeScript and Vite. Tailwind v4 uses its official Vite plugin. Shared tokens live in `src/index.css`. Fraunces, Inter and JetBrains Mono are self-hosted through Fontsource. Motion imports use `motion/react`; two adapted React Bits effects honour reduced motion. Three.js and d3-sankey remain deferred; Lenis and WebGL effects are not activated.
 
-## Python setup
+## Structure
 
-Python 3.14 was used for setup. The environment is local and ignored by Git. From the project root on Windows PowerShell:
+```text
+src/
+  App.tsx                 introduction and opening chart
+  index.css               tokens, responsive styles, reduced motion
+  components/charts/      bars, D3 line plot, source/table wrappers
+  components/ui/          navigation, selected effects, source notes
+  sections/               medicine, evidence, reporting, research, methods
+  hooks/                  abortable static JSON loading
+  lib/                    formatting, report filters, utilities
+  data/                   TypeScript data contracts
+public/
+  data/                   frozen JSON/CSV and derived frontend overview
+  favicon.svg
+  og-image.jpg
+scripts/                  data preparation and frontend verification
+data-pipeline/
+  raw/                    local ignored source caches
+  clean/                  analysis and appraisal results
+  scripts/                extraction, analysis and validation
+  .venv/                  local ignored Python environment
+  .env.example
+  requirements.txt
+  METHODOLOGY.md
+docs/                     PRD, evidence, methodology and delivery records
+.impeccable/              approved references, review evidence, design sidecar
+DESIGN.md
+PRODUCT.md
+CLAUDE.md
+```
+
+## Data and Python setup
+
+The browser reads public static exports only. API keys stay in the ignored pipeline environment file. From Windows PowerShell:
 
 ```powershell
 python -m venv data-pipeline/.venv
@@ -38,48 +67,8 @@ python -m venv data-pipeline/.venv
 Copy-Item data-pipeline/.env.example data-pipeline/.env
 ```
 
-On macOS/Linux, use `python3 -m venv data-pipeline/.venv` and `data-pipeline/.venv/bin/python -m pip install -r data-pipeline/requirements.txt`. Copy the environment example only when creating a new local `.env`, preserving any existing credentials.
+Copy the example only when creating a new `.env`, preserving existing credentials. On macOS/Linux use `python3 -m venv` and the environment's `bin/python`. The optional `OPENFDA_API_KEY` is loaded by pipeline scripts. Raw caches remain local and ignored.
 
-`OPENFDA_API_KEY` is optional. Future scripts must load `data-pipeline/.env` explicitly with python-dotenv. Raw responses stay in `data-pipeline/raw/` and are ignored; cleaned intermediate files belong in `data-pipeline/clean/`, final JSON/CSV exports in `public/data/`. Log every query and retrieval date in `data-pipeline/METHODOLOGY.md`.
+See [pipeline reproduction](data-pipeline/PIPELINE.md), [source review](docs/RESEARCH_FOUNDATION.md), [Phase 2 results](docs/PHASE_2_RESULTS.md), [analysis](docs/PHASE_3_ANALYSIS.md), [appraisal](docs/EVIDENCE_APPRAISAL.md) and [query logs](data-pipeline/METHODOLOGY.md). Run `data-pipeline/.venv/Scripts/python.exe data-pipeline/scripts/analyse.py` after restoring documented source caches to replay analysis offline. The repository includes derived results and figures. The original PRD is retained unchanged; content corrections and the user's later visual choice supersede its unsupported proposals.
 
-## Structure
-
-```text
-src/
-  App.tsx
-  main.tsx
-  index.css
-  components/
-    ui/
-    charts/
-  sections/
-  hooks/
-  lib/
-    utils.ts
-  data/
-    types.ts
-public/data/
-data-pipeline/
-  raw/
-  clean/
-  scripts/
-  .venv/                 (local, ignored)
-  .env.example
-  requirements.txt
-  METHODOLOGY.md
-docs/
-  PRD.md
-  REACTBITS.md
-scripts/
-  verify-imports.mjs
-CLAUDE.md
-components.json
-```
-
-The original supplied PRD is preserved at the repository root and copied unchanged to `docs/PRD.md`. It lists fields but no formal JSON schemas; `src/data/types.ts` is a provisional contract refined during source review. The Phase 1 review identifies corrections to seed assumptions without altering the original PRD.
-
-See [React Bits commands](docs/REACTBITS.md) and [project conventions](CLAUDE.md). Phase 2 exports and their audit are complete; see [the results](docs/PHASE_2_RESULTS.md). Phase 3 analysis and bounded evidence appraisal are complete; see [the analysis](docs/PHASE_3_ANALYSIS.md). The next phase is design review. Design and frontend work remain separate later phases.
-
-## Analysis reproduction
-
-After restoring the documented raw caches and Python environment, run `data-pipeline/.venv/Scripts/python.exe data-pipeline/scripts/analyse.py`. It performs network-disabled record replay, verifies input export hashes and denominators, writes analysis JSON/CSV and renders analytical PNG/SVG figures. Matplotlib dependencies are pinned in `data-pipeline/requirements.txt`. The repository includes derived results and figures; raw caches remain local. See [content decisions](docs/CONTENT_DECISIONS.md) before using counts in website copy.
+See [React Bits commands and license](docs/REACTBITS.md) and [project conventions](CLAUDE.md). Reporting is not incidence or causality. India-specific approval and licensed MedDRA hierarchy gaps remain explicit.

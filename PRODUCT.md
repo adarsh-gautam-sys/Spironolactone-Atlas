@@ -27,27 +27,27 @@ The project connects product-specific label scope, a reproducible reporting-data
 - Static public website, reached through a shared URL; no accounts, backend or collection of visitor health information.
 - Offline Python pipeline exports static JSON/CSV; visitors can inspect underlying tables, sources and methodology.
 - Current reporting window: first FDA receipt 2004–2025; retrieval snapshot 3 November 2026. A complete retrieval is not proof of exhaustive brand/spelling recall or complete spontaneous reporting.
-- Existing code is Vite, React, strict TypeScript and Tailwind CSS v4, with npm. The current App is a toolchain placeholder and supplies no established visual identity.
+- The implemented frontend uses Vite, React, strict TypeScript and Tailwind CSS v4, with npm. It renders the full narrative and data exploration from frozen static exports.
 - Major completed updates are committed and pushed to https://github.com/adarsh-gautam-sys/Spironolactone-Atlas.
 
 ## Capabilities and Constraints
 
 - Single-page narrative with section wayfinding, responsive data exploration, evidence-topic details, product/jurisdiction comparisons and a searchable interaction reference.
 - Charts use exported data, with takeaway, named source, retrieval date, denominator and underlying table access. Preserve source-specific distinctions and unknown values.
-- Use `motion/react` for purposeful motion. React Bits may supply selected signature effects, with a maximum of six components across the site. Check each dependency and bundle cost before installation. None is installed yet.
+- Use `motion/react` for purposeful motion. Two adapted React Bits effects are installed: CountUp and BlurText. Maximum six components across the site; check dependencies and bundle cost before adding more.
 - Motion must respect reduced-motion preferences, and expensive/WebGL effects need bounded use and static alternatives. Lenis is available; activation is optional and must preserve native navigation and accessibility.
 - Binding technical targets from the PRD: mobile-first, 360–1920 px; WCAG AA; Lighthouse mobile performance/accessibility/SEO targets 85/95/95; LCP under 2.5 seconds; initial JavaScript around 250 KB gzip or less.
 - Educational use only; no dosing advice, patient-specific recommendations, causal claims from spontaneous reports or implied clinical decision support.
 - Replace the proposed off-label prescribing-share donut with indication completeness and explicitly named topic counts. Source-term matches do not establish real-world prescribing prevalence or confirmed label status.
 - Separate report-level seriousness, overlapping seriousness criteria and reaction-level outcomes. Co-reported drug names are not a measured interaction-risk ranking.
 - India-specific approval comparisons and a MedDRA SOC/body-map output remain unresolved. Do not fabricate those inputs or imply that a missing source means a use is unapproved.
-- The Impeccable shape brief is confirmed in `docs/SHAPE_BRIEF.md`. The user approved Clinical Editorial in the comp-first composition round. Phase 4 design is complete; Phase 5 frontend implementation is next, using `docs/PHASE_4_DESIGN.md` and the approved comp.
+- The Impeccable shape brief is confirmed in `docs/SHAPE_BRIEF.md`. Phase 5 implements Clinical Editorial. On 4 November 2026 the user supplied the original light mockup and explicitly made it the visual authority over the PRD. See `docs/PHASE_5_FRONTEND.md` for the implementation and verification boundary.
 
 ## Brand Commitments
 
-Preserve the name Spironolactone Atlas and the PRD's clinical precision, editorial storytelling and calm, confident voice. The supplied PRD's section 8 is the visual-direction input; shape will resolve its composition and motion with the user rather than treating the placeholder as a design system. No logo, existing campaign assets or finished website identity has been supplied.
+Preserve the name Spironolactone Atlas, clinical precision, editorial storytelling and calm, confident voice. The user's original attached mockup is binding visual authority and overrides the PRD's design direction: warm paper ground, ink lettering, dark primary action, coral/teal chart bars, fine rules, centered introduction and four statistic panels.
 
-The user selected **Clinical Editorial Standard** in the shape direction round: a familiar editorial hierarchy, clear section navigation, headline statistics and stacked chart sections, retaining the PRD's deep ink ground, off-white text and coral/teal roles. Comp-first remains the confirmed workflow, and the shape brief is confirmed. No additional comparator sites were supplied. The approved composition is `.impeccable/mocks/composition/01-clinical-editorial.png`, reusing the selected decision image unchanged. Its sidecar records approval, and the surface brief for `src/App.tsx` carries the composition handoff.
+The current approved reference is `.impeccable/mocks/composition/02-user-original.png` (1487 × 1058), supplied and selected by the user on 4 November 2026. It supersedes the earlier dark `01-clinical-editorial.png`. Comp-first remains the workflow. Maintain actual exported chart proportions, source footnotes and accessible responsive reflow when translating the reference. The PRD remains product input; it cannot override this visual choice.
 
 ## Evidence on Hand
 

@@ -1,0 +1,13 @@
+{
+  "origin": "User-supplied image attachment, copied unchanged from codex-clipboard-dcbc9cef-25ba-45f4-9808-bcab3d500914.png.",
+  "approved": true,
+  "approvedOn": "2026-11-04",
+  "approval": "User requested the original attached mockup and explicitly overrode the PRD design direction, then authorized continuation.",
+  "dimensions": { "width": 1487, "height": 1058 },
+  "supersedes": ".impeccable/mocks/composition/01-clinical-editorial.png",
+  "implementationAdaptations": [
+    "Exact exported chart proportions instead of illustrative generated lengths.",
+    "Retrieval dates and accessible data views retained.",
+    "Responsive reflow and darker text accents for readable contrast on paper."
+  ]
+}

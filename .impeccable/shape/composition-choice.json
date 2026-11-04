@@ -8,7 +8,8 @@
     "buildPathFlipped": false
   },
   "approved": true,
-  "approvalScope": "Clinical Editorial composition approved for subsequent frontend implementation. Phase 4 design handoff complete; Phase 5 not started.",
+  "approvalScope": "Historical Phase 4 approval. Superseded on 4 November 2026 by the user's explicitly selected original light attachment.",
+  "supersededBy": ".impeccable/mocks/composition/02-user-original.png",
   "corrections": [
     "Use exact exported chart proportions rather than the generated image's approximate lengths.",
     "Active navigation follows the actual visible section rather than the mockup's illustrative selection."

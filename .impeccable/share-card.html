@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Atlas social image</title>
+    <link rel="stylesheet" href="/src/index.css" />
+    <style>
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        padding: 45px 55px;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-header {
+        font: 18px var(--font-mono);
+        letter-spacing: 0.12em;
+        border-bottom: 1px solid #7c8290;
+        padding-bottom: 25px;
+      }
+      .card-main {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1.45fr 1fr;
+        gap: 55px;
+        align-items: center;
+      }
+      .card-main h1 {
+        white-space: normal;
+        font-size: 88px;
+        line-height: 1.03;
+        letter-spacing: -0.04em;
+      }
+      .card-main p {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 23px;
+        max-width: 34ch;
+      }
+      .card-numbers {
+        border-left: 1px solid #7c8290;
+        padding-left: 40px;
+      }
+      .card-numbers strong {
+        font: 56px var(--font-mono);
+        display: block;
+      }
+      .card-numbers span {
+        font-size: 20px;
+        display: block;
+        margin-block: 8px 25px;
+      }
+      .card-footer {
+        font-size: 13px;
+        border-top: 1px solid #7c8290;
+        padding-top: 17px;
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+      }
+      .accent {
+        color: var(--color-foreground);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-header">SPIRONOLACTONE ATLAS</div>
+    <div class="card-main">
+      <div>
+        <h1>Understand<br />the evidence.</h1>
+        <p>Explore the uses, research and reporting data. See the limits.</p>
+      </div>
+      <div class="card-numbers">
+        <strong class="accent">24,805</strong><span>Selected reports</span
+        ><strong style="font-size: 34px">2004–2025</strong
+        ><span>FDA receipt years</span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <span>openFDA · Retrieved 3 Nov 2026</span
+      ><span>Educational use. Reporting is not incidence or causality.</span>
+    </div>
+  </body>
+</html>
