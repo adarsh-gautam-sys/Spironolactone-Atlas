@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-03T23:38:44.023Z",
+  "generatedAt": "2026-11-04T10:18:56.991Z",
   "title": "Design System: Spironolactone Atlas",
   "extensions": {
     "colorMeta": {
@@ -312,6 +312,13 @@
       "description": "The quiet linked provenance line used beside charts; sample from the mechanism introduction.",
       "html": "<p class=\"ds-source-note\"><a href=\"https://labeling.pfizer.com/showlabeling.aspx?id=520#S12.1\">Aldactone US label, §12.1</a> · Revised November 2025 · Reviewed 3 Nov 2026</p>",
       "css": ".ds-source-note{color:var(--color-muted);font:400 12px/1.75 var(--font-body);margin:20px 0 0;max-width:100%}.ds-source-note a{color:inherit;text-underline-offset:4px;text-decoration-color:color-mix(in srgb,var(--color-muted),transparent 45%)}.ds-source-note a:hover{text-decoration-color:var(--color-accent)}.ds-source-note a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-source-note{font-size:11px}}"
+    },
+    {
+      "name": "Chapter Index",
+      "kind": "nav",
+      "description": "The full chapter index below the short read. Expanded in this preview; native disclosure is closed by default in the app.",
+      "html": "<details class=\"ds-chapter-index\" open><summary>Browse all chapters</summary><nav aria-label=\"All atlas chapters\"><ul><li><a href=\"#story\">The story</a></li><li><a href=\"#reporting\">Reporting data</a></li><li><a href=\"#evidence\">Evidence</a></li><li><a href=\"#research\">Research activity</a></li><li><a href=\"#interactions\">Interactions</a></li><li><a href=\"#methods\">Methods</a></li><li><a href=\"#sources\">Sources</a></li></ul></nav></details>",
+      "css": ".ds-chapter-index{font:400 15px/1.55 var(--font-body);color:var(--color-foreground);background:var(--color-background);border-block:1px solid #626b7c;padding-block:8px;margin-top:20px}.ds-chapter-index summary{cursor:pointer;min-height:44px;display:list-item;padding-block:10px;font-weight:500}.ds-chapter-index summary::marker{color:var(--color-positive)}.ds-chapter-index ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 24px;list-style:none;margin:8px 0 12px;padding:0}.ds-chapter-index a{display:flex;align-items:center;min-height:44px;padding-block:8px;color:inherit;text-underline-offset:4px}.ds-chapter-index a:hover{text-decoration-color:var(--color-accent)}.ds-chapter-index summary:focus-visible,.ds-chapter-index a:focus-visible{outline:2px solid var(--color-positive);outline-offset:5px}@media(max-width:760px){.ds-chapter-index ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}}"
     }
   ],
   "narrative": {

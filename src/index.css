@@ -1255,6 +1255,26 @@ meter::-webkit-meter-optimum-value {
 .reading-guide > .text-link {
   margin-top: 16px;
 }
+.chapter-index {
+  border-block: 1px solid #626b7c;
+  padding-block: 8px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.chapter-index ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px 24px;
+  list-style: none;
+  margin: 8px 0 12px;
+  padding: 0;
+}
+.chapter-index a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-block: 8px;
+}
 .method-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1624,6 +1644,10 @@ meter::-webkit-meter-optimum-value {
   }
   .reading-guide li > a {
     right: -8px;
+  }
+  .chapter-index ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px;
   }
   .downloads ul,
   .reference-list {

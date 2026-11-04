@@ -10,6 +10,7 @@ import { Navigation } from '@/components/ui/Navigation';
 import { DataTable } from '@/components/charts/ChartBlock';
 import { SectionBoundary } from '@/components/ui/SectionBoundary';
 import { ReadingGuide } from '@/sections/ReadingGuide';
+import { ChapterIndex } from '@/components/ui/ChapterIndex';
 
 const AtlasSections = lazy(() => import('@/sections/AtlasSections'));
 function DeferredSections({ data }: { data: Overview }) {
@@ -133,6 +134,7 @@ export default function App() {
               download="adverse-reactions"
             />
             <ReadingGuide data={data} />
+            <ChapterIndex />
             <DeferredSections data={data} />
           </>
         )}

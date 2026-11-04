@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ArrowUpRight, ChevronDown } from 'lucide-react';
-const links = [
-  ['story', 'The story'],
-  ['reporting', 'Reporting data'],
-  ['evidence', 'Evidence'],
-  ['methods', 'Methods'],
-  ['sources', 'Sources'],
-] as const;
+import { chapters } from '@/lib/chapters';
+const headerLinks = chapters.filter(
+  ([id]) => id !== 'research' && id !== 'interactions',
+);
 export function Navigation() {
   const [active, setActive] = useState('');
   useEffect(() => {
@@ -36,7 +33,7 @@ export function Navigation() {
         Spironolactone Atlas
       </a>
       <nav className="desktop-nav" aria-label="Main navigation">
-        {links.map(([id, label]) => (
+        {headerLinks.map(([id, label]) => (
           <a
             key={id}
             href={`#${id}`}
@@ -52,12 +49,7 @@ export function Navigation() {
           Chapters <ChevronDown size={18} />
         </summary>
         <nav aria-label="Mobile chapters">
-          {[
-            ...links.slice(0, 3),
-            ['research', 'Research activity'],
-            ['interactions', 'Interactions'],
-            ...links.slice(3),
-          ].map(([id, label]) => (
+          {chapters.map(([id, label]) => (
             <a
               key={id}
               href={`#${id}`}

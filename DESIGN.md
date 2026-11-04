@@ -196,6 +196,8 @@ Selects and search inputs use paper, ink text, a thin gray stroke and the small 
 
 The header is a sticky, paper-colored wordmark-and-links row with a fine bottom rule. The Fraunces wordmark uses tight tracking; desktop links are Inter with a deep teal bottom stroke for hover and the current location. At the mobile breakpoint the links give way to a native Chapters disclosure. Its links stack in a bordered paper panel and close after selection. Native anchor navigation is immediate.
 
+After the short read, a native “Browse all chapters” disclosure provides the full seven-destination index on every device. Its labels and destinations share one definition with the mobile menu while the desktop header retains the original mockup's five links. The open index uses four columns on desktop, two on mobile, fine rules and links at least (44px) high.
+
 ### Segmented Controls
 
 Adjacent outlined buttons use ink/paper inversion for the pressed state, with `aria-pressed` exposing that state. The stroke turns deep teal on hover. They wrap as needed on desktop and form a two-column grid of individually rounded controls on mobile. Preserve button semantics rather than styling these as navigation links.

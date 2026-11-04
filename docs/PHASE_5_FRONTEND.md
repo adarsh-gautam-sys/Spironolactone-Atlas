@@ -52,6 +52,12 @@ The former five-item recap near methods is removed to avoid repeating the short 
 
 Desktop (1280 px) and mobile (360 px) checks confirm three points, working reading/detail/continuation anchors, no body horizontal overflow and no remaining duplicate recap. Evidence is stored in `.impeccable/review/distill/`. This addresses the critique's reading-sequence priority; the other critique items remain outside this distill pass. The historical 29/40 critique score has not been re-scored.
 
+## Clarify follow-up
+
+The requested Impeccable clarify pass addresses the critique's incomplete desktop wayfinding. A native “Browse all chapters” disclosure after the short read exposes all seven destinations, including research activity and interactions. It uses the same labels and targets as the mobile Chapters menu through one shared definition, while preserving the original mockup's five-link desktop header. Closed by default, the index reveals four columns on desktop and two on narrow layouts; each link has at least a 44 px target height. No medical claims, reporting counts or appraisal wording are changed.
+
+Production checks at 1280, 640 and 360 px confirmed existing targets, matching menu labels, keyboard opening/closing and research/interaction navigation, mobile menu closure after selection, no body horizontal overflow and no captured console errors. Evidence is saved in `.impeccable/review/clarify/`. These are responsive layout checks; a full browser-zoom and screen-reader audit remains part of Phase 6. The prior critique score is not re-scored.
+
 ## Remaining Phase 6 work
 
 Run independent automated accessibility checks, Lighthouse/mobile performance and real device/reduced-motion validation; verify print output and hosted download behaviour. Configure the deployment URL/base, canonical URL and absolute share metadata for the chosen host. Deploy only in the launch phase and verify the live page and social preview. No Lighthouse score, WCAG conformance claim or live deployment is asserted here. India-specific label and licensed MedDRA hierarchy gaps remain open; the site presents those limits explicitly.
