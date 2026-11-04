@@ -1,0 +1,24 @@
+{
+  "assessment": "B",
+  "command": "node C:/Users/conta.LAPTOP-IR41J1UC/.agents/skills/impeccable/scripts/detect.mjs --json src/App.tsx src/sections src/components",
+  "exitCode": 0,
+  "rawJson": [],
+  "count": 0,
+  "rules": [],
+  "locations": [],
+  "ignoreList": "No .impeccable/critique/ignore.md file exists",
+  "limitations": [
+    "One deterministic CLI invocation only. Multiple targets are supported by bundled CLI usage and implementation.",
+    "This is a source markup scan of TSX directories. External src/index.css is not among the passed targets; runtime computed-style, responsive size and visual pattern evidence is outside this zero-result claim.",
+    "A clean static scan is not an accessibility, semantic, runtime, medical-content or interaction certification."
+  ],
+  "browserPhase": "Blocked after Assessment A finalized; source results remained isolated until A completed.",
+  "browserEvidence": {
+    "freshTabAttempt": "IAB unavailable; no browser providers returned by inventory.",
+    "nativeFallback": "Windows browser control was stopped by URL-policy enforcement support limitations.",
+    "runtimeEvidence": "No B console observations, DOM measurements or screenshots obtained.",
+    "overlay": "Unavailable; no mutable injection attempted through read-only evaluate.",
+    "fallbackSignal": "Single CLI scan; independent live visual inspection supplied by Assessment A.",
+    "cleanup": "No B-owned tab created, no viewport changed, no live server started."
+  }
+}
