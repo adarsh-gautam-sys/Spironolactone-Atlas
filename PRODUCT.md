@@ -33,6 +33,7 @@ The project connects product-specific label scope, a reproducible reporting-data
 ## Capabilities and Constraints
 
 - Single-page narrative with section wayfinding, responsive data exploration, evidence-topic details, product/jurisdiction comparisons and a searchable interaction reference.
+- The reading action opens three existing, source-linked takeaways before medicine context and detailed exploration. The former repeated five-item recap is consolidated into this short introduction; reporting caveats and unresolved sources remain in their detailed sections.
 - Charts use exported data, with takeaway, named source, retrieval date, denominator and underlying table access. Preserve source-specific distinctions and unknown values.
 - Use `motion/react` for purposeful motion. Two adapted React Bits effects are installed: CountUp and BlurText. Maximum six components across the site; check dependencies and bundle cost before adding more.
 - Motion must respect reduced-motion preferences, and expensive/WebGL effects need bounded use and static alternatives. Lenis is available; activation is optional and must preserve native navigation and accessibility.

@@ -44,6 +44,14 @@ Current review captures are first-viewport or section-viewport images, not full-
 
 The fresh shipped finish reviewer matched the user-approved reference and requested two local mechanism contrast corrections. Both were fixed, recaptured across all three desktop/mobile states and scored resolved; final disposition **ship** covers those scored fixes. The review record is `.impeccable/review/FINISH_REVIEW.md`. The first attempt hit a usage cap; the fresh replacement completed the review. A capture-only return requested a settled 1280 px screenshot, which was recaptured with the final count and sharp text. The shipped documenter then records the final system in `DESIGN.md` and `.impeccable/design.json`.
 
+## Distill follow-up
+
+The requested Impeccable distill pass moves three existing takeaways to the beginning of the reading route: reporting denominator, indication missingness, and research activity versus evidence. Their wording and live exported quantities are retained. “Read the story” now reaches this 86-word, source-linked introduction before the detailed medicine/evidence narrative. A continuation link reaches the medicine section, and each takeaway links to its existing supporting detail.
+
+The former five-item recap near methods is removed to avoid repeating the short read. Its hyperkalaemia/incidence and India/mapping points remain explicit in the opening, interaction context, product-label comparison and methodology. No charts, filters, data views, downloads, source qualifications or data exports are removed. The approved mockup's opening and existing two motion effects are preserved. The section reuses the existing open-row styling, with compact type and spacing; no dependency or global token is added.
+
+Desktop (1280 px) and mobile (360 px) checks confirm three points, working reading/detail/continuation anchors, no body horizontal overflow and no remaining duplicate recap. Evidence is stored in `.impeccable/review/distill/`. This addresses the critique's reading-sequence priority; the other critique items remain outside this distill pass. The historical 29/40 critique score has not been re-scored.
+
 ## Remaining Phase 6 work
 
 Run independent automated accessibility checks, Lighthouse/mobile performance and real device/reduced-motion validation; verify print output and hosted download behaviour. Configure the deployment URL/base, canonical URL and absolute share metadata for the chosen host. Deploy only in the launch phase and verify the live page and social preview. No Lighthouse score, WCAG conformance claim or live deployment is asserted here. India-specific label and licensed MedDRA hierarchy gaps remain open; the site presents those limits explicitly.

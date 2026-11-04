@@ -545,7 +545,7 @@ h1 {
   scroll-margin-top: 10px;
 }
 #story {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 10px;
 }
 .section-heading,
 .mechanism {
@@ -1215,11 +1215,19 @@ meter::-webkit-meter-optimum-value {
   margin-top: 10px;
   color: var(--color-foreground);
 }
-.insights ol {
+.reading-guide {
+  padding-top: 60px;
+}
+.reading-guide > h2 {
+  font-size: clamp(36px, 3.5vw, 52px);
+  letter-spacing: -0.025em;
+  margin-bottom: 28px;
+}
+.reading-guide ol {
   list-style: none;
   padding: 0;
 }
-.insights li {
+.reading-guide li {
   padding: 28px 55px 28px 0;
   border-top: 1px solid #626b7c;
   display: grid;
@@ -1227,15 +1235,15 @@ meter::-webkit-meter-optimum-value {
   gap: 70px;
   position: relative;
 }
-.insights li h3 {
-  font-size: 32px;
+.reading-guide li h3 {
+  font-size: 28px;
 }
-.insights li p {
+.reading-guide li p {
   font-size: 16px;
   color: var(--color-muted);
   max-width: 64ch;
 }
-.insights li > a {
+.reading-guide li > a {
   position: absolute;
   right: 0;
   top: 25px;
@@ -1243,6 +1251,9 @@ meter::-webkit-meter-optimum-value {
   place-items: center;
   width: 44px;
   height: 44px;
+}
+.reading-guide > .text-link {
+  margin-top: 16px;
 }
 .method-grid {
   display: grid;
@@ -1467,9 +1478,6 @@ meter::-webkit-meter-optimum-value {
     padding-block: 65px 10px;
     scroll-margin-top: 70px;
   }
-  #story {
-    scroll-margin-top: 80px;
-  }
   .section-heading,
   .mechanism,
   .method-grid {
@@ -1603,18 +1611,18 @@ meter::-webkit-meter-optimum-value {
   .interaction-table {
     font-size: 13px;
   }
-  .insights li {
+  .reading-guide li {
     grid-template-columns: 1fr;
     gap: 15px;
     padding: 24px 35px 24px 0;
   }
-  .insights li h3 {
-    font-size: 28px;
+  .reading-guide li h3 {
+    font-size: 24px;
   }
-  .insights li p {
+  .reading-guide li p {
     font-size: 15px;
   }
-  .insights li > a {
+  .reading-guide li > a {
     right: -8px;
   }
   .downloads ul,

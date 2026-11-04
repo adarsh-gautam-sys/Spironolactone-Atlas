@@ -9,23 +9,22 @@ import { number, percent } from '@/lib/format';
 import { Navigation } from '@/components/ui/Navigation';
 import { DataTable } from '@/components/charts/ChartBlock';
 import { SectionBoundary } from '@/components/ui/SectionBoundary';
+import { ReadingGuide } from '@/sections/ReadingGuide';
 
 const AtlasSections = lazy(() => import('@/sections/AtlasSections'));
 function DeferredSections({ data }: { data: Overview }) {
   return (
-    <div id="story" data-chapter="story">
-      <SectionBoundary>
-        <Suspense
-          fallback={
-            <p className="loading-state" role="status">
-              Loading the evidence atlas…
-            </p>
-          }
-        >
-          <AtlasSections data={data} />
-        </Suspense>
-      </SectionBoundary>
-    </div>
+    <SectionBoundary>
+      <Suspense
+        fallback={
+          <p className="loading-state" role="status">
+            Loading the evidence atlas…
+          </p>
+        }
+      >
+        <AtlasSections data={data} />
+      </Suspense>
+    </SectionBoundary>
   );
 }
 
@@ -133,6 +132,7 @@ export default function App() {
               rows={data.topReactions.slice(0, 3)}
               download="adverse-reactions"
             />
+            <ReadingGuide data={data} />
             <DeferredSections data={data} />
           </>
         )}

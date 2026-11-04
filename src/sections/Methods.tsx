@@ -1,8 +1,8 @@
-import { ArrowRight, ArrowUpRight, Download } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 import type { Overview, EvidenceData } from '@/data/site-types';
 import type { Dataset, Indication } from '@/data/types';
 import type { JsonResource } from '@/hooks/useJson';
-import { date, number, percent, sourcePath } from '@/lib/format';
+import { date, number, sourcePath } from '@/lib/format';
 
 const repository = 'https://github.com/adarsh-gautam-sys/Spironolactone-Atlas';
 const files = [
@@ -28,70 +28,8 @@ export function Methods({
   labels: JsonResource<Dataset<Indication>>;
   evidence: JsonResource<EvidenceData>;
 }) {
-  const insights = [
-    {
-      heading: 'The reporting denominator matters.',
-      text: `${number(data.cohort)} retained reports follow same-entry suspect and single-ingredient filtering. They are not a population of medicine users.`,
-      target: 'reporting',
-    },
-    {
-      heading: 'Missingness is a finding.',
-      text: `${percent(data.missingIndication, data.cohort)} have no informative indication. A reliable off-label prescribing percentage cannot be established.`,
-      target: 'reporting',
-    },
-    {
-      heading: 'A leading term is not an incidence estimate.',
-      text: 'Hyperkalaemia leads this selected reporting cohort. Source selection, exposure and reporting behaviour remain unresolved.',
-      target: 'interactions',
-    },
-    {
-      heading: 'Research activity and evidence differ.',
-      text: 'Publication and registry counts help discover research. Read the actual endpoint, population and appraisal before drawing a conclusion.',
-      target: 'research',
-    },
-    {
-      heading: 'Unknown approval status stays unknown.',
-      text: 'The India-specific product source and a licensed organ-system mapping remain unavailable. Neither gap is filled by inference.',
-      target: 'evidence',
-    },
-  ];
   return (
     <>
-      <section
-        className="atlas-section insights"
-        aria-labelledby="insights-title"
-      >
-        <div className="section-heading">
-          <h2 id="insights-title">
-            Five things
-            <br />
-            to take with you.
-          </h2>
-          <p>
-            The value of an atlas is as much in the boundaries it draws as in
-            the observations it contains.
-          </p>
-        </div>
-        <ol>
-          {insights.map((item) => (
-            <li key={item.heading}>
-              <h3>{item.heading}</h3>
-              <p>{item.text}</p>
-              <a
-                href={`#${item.target}`}
-                aria-label={`See evidence: ${item.heading}`}
-              >
-                <ArrowRight />
-              </a>
-            </li>
-          ))}
-        </ol>
-        <p className="source-note">
-          Sources: openFDA, retrieved {date(data.source.retrievedAt)}; product
-          labels and targeted appraisals reviewed 3 Nov 2026. Follow each
-          insight to its source and limitations.
-        </p>
-      </section>
       <section id="methods" className="atlas-section" data-chapter="methods">
         <div className="section-heading">
           <h2>

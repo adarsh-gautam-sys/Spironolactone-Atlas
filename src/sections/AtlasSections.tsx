@@ -45,6 +45,7 @@ export default function AtlasSections({ data }: { data: Overview }) {
   return (
     <>
       <section
+        id="medicine"
         className="atlas-section context-section"
         aria-label="Medicine context"
       >
