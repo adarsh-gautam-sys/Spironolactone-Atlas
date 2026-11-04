@@ -1,0 +1,22 @@
+# Upload only the frontend and the frozen inputs required by prepare:data.
+/*
+!src
+!public
+!scripts
+!data-pipeline
+/data-pipeline/*
+!/data-pipeline/clean
+/data-pipeline/clean/*
+!/data-pipeline/clean/phase-3-analysis.json
+!/data-pipeline/clean/evidence-appraisal.json
+!index.html
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsconfig.node.json
+!vite.config.ts
+!vercel.json
+**/.env
+**/.env.*
+**/.venv
+**/node_modules

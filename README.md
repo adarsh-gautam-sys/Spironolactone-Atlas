@@ -2,11 +2,11 @@
 
 An animated, single-page educational atlas of spironolactone uses, research evidence and adverse-event reporting. It includes a guided narrative, product-label comparisons, ten evidence appraisals, reporting and trial charts, subgroup filters, a searchable interaction reference and downloadable source data.
 
-The user's original light mockup governs the visual design: warm paper, ink typography and coral/teal charts. See [frontend delivery](docs/PHASE_5_FRONTEND.md), [the design system](DESIGN.md), [project phases](docs/PHASES.md) and [content decisions](docs/CONTENT_DECISIONS.md). Quality audits and deployment remain Phase 6.
+The user's original light mockup governs the visual design: warm paper, ink typography and coral/teal charts. The site is live at [spironolactone-atlas.vercel.app](https://spironolactone-atlas.vercel.app/). See [deployment and updates](docs/DEPLOYMENT.md), [frontend delivery](docs/PHASE_5_FRONTEND.md), [the design system](DESIGN.md), [project phases](docs/PHASES.md) and [content decisions](docs/CONTENT_DECISIONS.md). Broader quality audits remain Phase 6.
 
 ## Frontend setup
 
-Use Node.js 22.12+ and npm.
+Use Node.js 22.x (22.12 or newer) and npm.
 
 ```sh
 npm ci

@@ -2,15 +2,15 @@
 
 The seven-day PRD schedule is a sequence of deliverables, not a fixed deadline. Work advances one phase at a time on user instruction.
 
-| Phase                   | Scope                                                                                 | Status                                                                       |
-| ----------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| 0 — Setup               | Toolchain, folders, conventions, placeholder                                          | Complete; commit fd186dd                                                     |
-| 1 — Research foundation | Source review, bounded API tests, indication/evidence shortlist, draft data contracts | Complete with documented source gaps, 3 November 2026                        |
-| 2 — Data pipeline       | Full extraction, cleaning, mappings, validation, typed JSON/CSV exports               | Complete with documented appraisal gaps, 3 November 2026                     |
-| 3 — Analysis            | Descriptive results, uncertainty and limitations, evidence grading, insight shortlist | Complete bounded appraisal; clinical/source gaps documented, 3 November 2026 |
-| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | Complete: Clinical Editorial composition approved, 3 November 2026           |
-| 5 — Frontend            | Sections, charts, tables and selected effects                                         | Implemented; original light mockup restored, 4 November 2026                 |
-| 6 — Quality and launch  | Accessibility, performance, deployment and LinkedIn assets                            | Not started                                                                  |
+| Phase                   | Scope                                                                                 | Status                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 0 — Setup               | Toolchain, folders, conventions, placeholder                                          | Complete; commit fd186dd                                                      |
+| 1 — Research foundation | Source review, bounded API tests, indication/evidence shortlist, draft data contracts | Complete with documented source gaps, 3 November 2026                         |
+| 2 — Data pipeline       | Full extraction, cleaning, mappings, validation, typed JSON/CSV exports               | Complete with documented appraisal gaps, 3 November 2026                      |
+| 3 — Analysis            | Descriptive results, uncertainty and limitations, evidence grading, insight shortlist | Complete bounded appraisal; clinical/source gaps documented, 3 November 2026  |
+| 4 — Design              | Tokens, typography, layout and motion plan for review                                 | Complete: Clinical Editorial composition approved, 3 November 2026            |
+| 5 — Frontend            | Sections, charts, tables and selected effects                                         | Implemented; original light mockup restored, 4 November 2026                  |
+| 6 — Quality and launch  | Accessibility, performance, deployment and LinkedIn assets                            | In progress: Vercel production deployed, 4 November 2026; broader audits open |
 
 Phase 1 is a research inventory and executable connectivity check, not a systematic review or a completed dataset. It does not establish incidence, causal relationships, clinical recommendations or an off-label prescribing prevalence.
 
@@ -42,4 +42,8 @@ See [confirmed shape brief](SHAPE_BRIEF.md) and [historical design handoff](PHAS
 
 ## Phase 5 deliverables
 
-See [frontend delivery](PHASE_5_FRONTEND.md), [recorded design system](../DESIGN.md) and [React Bits adaptations](REACTBITS.md). The page implements the full narrative, sourced charts and data views, evidence details, subgroup exploration, research activity, interaction search, methods and downloads. Phase 6 remains separate: broader accessibility/performance audits, deployment configuration, live share metadata and launch assets.
+See [frontend delivery](PHASE_5_FRONTEND.md), [recorded design system](../DESIGN.md) and [React Bits adaptations](REACTBITS.md). The page implements the full narrative, sourced charts and data views, evidence details, subgroup exploration, research activity, interaction search, methods and downloads.
+
+## Phase 6 progress
+
+The requested [Vercel production deployment](DEPLOYMENT.md) is live, with a verified remote build, hosted data exports and production share metadata. Broader accessibility/performance audits and launch assets remain open; deployment alone does not complete this phase.
